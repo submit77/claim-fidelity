@@ -1,0 +1,524 @@
+[
+  {
+    "record_id": "RAE-INTERFACE-BATCH-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "reality-alignment-engine",
+      "artifact": "Sister Repo Interface Cards v0.1",
+      "path": "<workspace>/reality-alignment-engine/docs/architecture/sister_repo_interface_cards_v0.1.md",
+      "artifact_type": "roadmap_or_state",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "RAE sister-repo interface cards",
+      "system_type": "cross-repo interface-governance artifact",
+      "boundary": "Rules for citing sister repos as inputs without absorbing their canon, warrant, or action authority."
+    },
+    "carrier": {
+      "carrier_kind": "interface-card document",
+      "carrier_state": "seed interface map with allowed imports, blocked imports, runtime uses, and non-laundering rules",
+      "carrier_state_space": "repo roles, allowed imports, blocked imports, runtime-use clauses, non-laundering clauses",
+      "maintainer": "RAE architecture docs and future governance updates"
+    },
+    "use_episode": {
+      "use": "Use interface cards to decide how RAE may cite sister-repo artifacts in situation packets and runtime work.",
+      "actor_context": "RAE/FSST/CDP family integration work",
+      "inference_drawn": "A sister repo may be cited only under the declared interface role and blocked-import constraints.",
+      "inference_type": "cross-repo citation governance",
+      "non_inferences": [
+        "Citing a sister repo imports its domain warrant.",
+        "Interface reference transfers action authority.",
+        "RAE may override a sister repo's canon by naming an interface role."
+      ]
+    },
+    "binding": {
+      "binding_target": "cross-repo reference boundaries and non-laundering conditions",
+      "binding_basis": ["normative/deontic", "operational", "frame-relative"],
+      "binding_mechanism": ["repository-maintained", "conventional", "institutional"],
+      "claimed_mode": "interface governance",
+      "operative_mode": "cross-repo citation and blocked-import rule surface"
+    },
+    "validity": {
+      "validity_criterion": "The interface card preserves repo role boundaries and blocks authority transfer outside declared scope.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The artifact explicitly states 'Reference is not absorption' and lists allowed and blocked imports for each sister repo.",
+      "confidence": "high for local interface intent; untested for repeated future integration work",
+      "uncertainty": "Standing is ambiguous when two repos disagree about whether a citation stays inside the declared interface role."
+    },
+    "scope": {
+      "scope_conditions": "RAE family cross-repo references in situation packets, stack docs, workstream maps, and runtime orientation artifacts.",
+      "scope_status": "narrowed",
+      "scope_preserved": ["interface role", "allowed imports", "blocked imports", "non-laundering rule"],
+      "scope_lost": ["sister repo internal review state may change after citation"],
+      "prohibited_scope_extensions": [
+        "domain warrant import",
+        "direct action recommendation",
+        "claim that interface role transfers canon authority"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": ["RAE maintainer", "sister repo maintainer", "future packet author"],
+      "recognizer_standing": "RAE can define how it cites other repos, but sister repos retain standing over their own canon and warrant state.",
+      "authority_source": "RAE architecture docs for interface use; sister repos for their own canon and admitted claims.",
+      "uptake_path": "interface card -> situation packet citation -> sibling repo artifact reference -> bounded consequence",
+      "distributed_standing": [
+        {
+          "recognizer": "RAE maintainer",
+          "standing_scope": "define RAE-side citation roles and blocked imports",
+          "standing_basis": "RAE architecture/governance maintenance"
+        },
+        {
+          "recognizer": "sister repo maintainer",
+          "standing_scope": "determine canonical status and warrant of sister-repo artifacts",
+          "standing_basis": "source repo maintenance authority"
+        },
+        {
+          "recognizer": "future packet author",
+          "standing_scope": "cite sister artifacts only within declared interface role",
+          "standing_basis": "RAE situation-packet discipline"
+        }
+      ],
+      "recognition_relation": ["cite", "bound", "block", "revise"],
+      "response_eligibility": ["allow bounded citation", "block authority transfer", "require source repo check"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use interface cards to route sister-repo references in RAE work.",
+      "action_policy": "Reference is not absorption; interface is not authority transfer.",
+      "licensed_consequence": "Bounded citation and role declaration for cross-repo references.",
+      "license_basis": "Declared allowed imports, blocked imports, non-laundering rules, and distributed standing.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "sister repo canon override",
+        "domain warrant laundering",
+        "direct action authority transfer"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "interface card -> RAE packet or architecture doc -> future work decision",
+      "metadata_preserved": ["interface role", "blocked imports", "non-laundering rule"],
+      "metadata_lost": ["future changes in source repo status unless rechecked"]
+    },
+    "chain": {
+      "upstream_links": ["RAE governance", "sister repo current artifacts"],
+      "downstream_links": ["situation packets", "runtime orientation", "workstream references"],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": ["source repo canonical status must be checked at use time"]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "cross-repo interface governance",
+      "next_check": "Test whether future packet citations preserve source-repo status metadata."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "RAE maintainers for interface-card use only",
+      "operator_instruction_reference": "Milestone 1H small batch scaffold-fill trial"
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["source_repo_status_check"],
+      "notes": "Standing is genuinely distributed and partly ambiguous: RAE owns citation rules, not sister repo warrant."
+    }
+  },
+  {
+    "record_id": "ACF-BOUNDARY-BATCH-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "agency-capability-foundation",
+      "artifact": "Foundation Application Boundary",
+      "path": "<workspace>/agency-capability-foundation/14-foundation-application-boundary.md",
+      "artifact_type": "governance_doc",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "ACF foundation application boundary",
+      "system_type": "separation-of-concerns boundary artifact",
+      "boundary": "Boundary between standalone foundation derivations, hardening discipline, and apparatus or machine-facing application work."
+    },
+    "carrier": {
+      "carrier_kind": "boundary document",
+      "carrier_state": "separation note naming derivation track, hardening track, apparatus/application track, and non-scope",
+      "carrier_state_space": "boundary rules, track classifications, promotion status claims, non-scope statements",
+      "maintainer": "ACF foundation docs and repo maintenance workflow"
+    },
+    "use_episode": {
+      "use": "Use the boundary to decide whether a machine-facing artifact may be treated as foundation, application, or hardening pressure.",
+      "actor_context": "ACF/SSA/RAE integration or tooling work",
+      "inference_drawn": "Machine tooling may refine, route, check, or pressure the foundation but does not make the foundation true.",
+      "inference_type": "application-boundary classification",
+      "non_inferences": [
+        "Machine implementation validates the foundation.",
+        "Apparatus integration promotes foundation claims.",
+        "A case-packet pressure result is itself a foundation theorem."
+      ]
+    },
+    "binding": {
+      "binding_target": "ACF track separation and promotion boundary",
+      "binding_basis": ["normative/deontic", "operational", "frame-relative"],
+      "binding_mechanism": ["repository-maintained", "conventional"],
+      "claimed_mode": "separation-of-concerns note",
+      "operative_mode": "boundary rule surface for foundation/application classification"
+    },
+    "validity": {
+      "validity_criterion": "The artifact prevents tool/application status from laundering into foundation truth or promotion status.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The document states that machinery can refine or pressure the foundation but does not make it true.",
+      "confidence": "medium-high for local boundary discipline",
+      "uncertainty": "The artifact does not by itself define who adjudicates contested promotion from hardening pressure into foundation doctrine."
+    },
+    "scope": {
+      "scope_conditions": "ACF repo surfaces and bridge-facing application/tooling work.",
+      "scope_status": "narrowed",
+      "scope_preserved": ["derivation track", "hardening track", "application track", "non-scope"],
+      "scope_lost": ["future promotion decision procedure remains partly external"],
+      "prohibited_scope_extensions": [
+        "foundation truth from tooling",
+        "schema promotion from boundary classification",
+        "runtime implementation as derivation warrant"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": ["ACF maintainer", "case-packet reviewer", "tooling worker"],
+      "recognizer_standing": "ACF maintainers can classify repo surfaces; case-packet reviewers can create pressure; tooling workers can implement downstream applications without promoting foundation claims.",
+      "authority_source": "ACF boundary document and repo maintenance practice.",
+      "uptake_path": "boundary doc -> track classification -> promotion or quarantine decision",
+      "distributed_standing": [
+        {
+          "recognizer": "ACF maintainer",
+          "standing_scope": "classify foundation/application boundary and update doctrine",
+          "standing_basis": "ACF repo maintenance"
+        },
+        {
+          "recognizer": "case-packet reviewer",
+          "standing_scope": "produce pressure, falsifier, or revision candidate",
+          "standing_basis": "ACF case-packet loop"
+        },
+        {
+          "recognizer": "tooling worker",
+          "standing_scope": "implement downstream application without truth promotion",
+          "standing_basis": "apparatus/application track"
+        }
+      ],
+      "recognition_relation": ["classify", "pressure", "quarantine", "promote"],
+      "response_eligibility": ["keep derivation separate", "record application pressure", "block machinery-to-truth laundering"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use the boundary to classify an ACF-adjacent artifact's role.",
+      "action_policy": "Record derivation as derivation first; record machinery only as application or promotion pressure.",
+      "licensed_consequence": "Local classification of foundation, hardening, or application status.",
+      "license_basis": "Boundary rule, track definitions, and ACF maintenance standing.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "truth promotion from implementation",
+        "schema promotion",
+        "product specification authority",
+        "formal target authorization"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "ACF boundary doc -> cross-stack integration work -> classification or quarantine decision",
+      "metadata_preserved": ["track separation", "non-scope", "boundary rule"],
+      "metadata_lost": ["future promotion evidence unless separately attached"]
+    },
+    "chain": {
+      "upstream_links": ["ACF foundation docs", "case-packet loop", "apparatus/application references"],
+      "downstream_links": ["future ACF tooling", "SSA/RAE bridge work", "promotion reviews"],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": ["promotion from hardening pressure to foundation doctrine requires additional review"]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "application-boundary classification",
+      "next_check": "Define promotion standing if repeated cases need adjudication."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "ACF maintainers for ACF doctrine only",
+      "operator_instruction_reference": "Milestone 1H small batch scaffold-fill trial"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "moderate",
+      "new_field_pressure": ["promotion_adjudicator"],
+      "notes": "The scaffold forced an explicit gap: pressure-generation standing is not promotion standing."
+    }
+  },
+  {
+    "record_id": "SSA-COLLISION-BATCH-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "symbolic-systems-apparatus",
+      "artifact": "Move Collision Report",
+      "path": "<workspace>/symbolic-systems-apparatus/reports/move-collision-report.md",
+      "artifact_type": "reflexive_audit",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "SSA move collision report",
+      "system_type": "generated registry-collision audit",
+      "boundary": "Report of exact duplicate and near-duplicate callable move names across SSA files."
+    },
+    "carrier": {
+      "carrier_kind": "generated markdown report",
+      "carrier_state": "collision report with catalog counts, exact duplicate move names, occurrence counts, and file references",
+      "carrier_state_space": "move names, occurrence counts, file paths, duplicate groups, near-duplicate heuristic groups",
+      "maintainer": "SSA report-generation tooling and reports directory"
+    },
+    "use_episode": {
+      "use": "Use the collision report to prioritize manual review of duplicate callable move names.",
+      "actor_context": "SSA library maintenance or FSST compiler source selection",
+      "inference_drawn": "A duplicate move name is a candidate collision requiring review, not automatically an error.",
+      "inference_type": "registry-audit triage",
+      "non_inferences": [
+        "Every exact duplicate is invalid.",
+        "A duplicate name means the underlying structural operation is the same.",
+        "The report licenses deprecation, rename, or merge without maintainer review."
+      ]
+    },
+    "binding": {
+      "binding_target": "SSA callable move registry names and file occurrences",
+      "binding_basis": ["codebook/conformance", "operational", "frame-relative"],
+      "binding_mechanism": ["computational", "repository-maintained"],
+      "claimed_mode": "generated collision report",
+      "operative_mode": "triage surface for human registry maintenance"
+    },
+    "validity": {
+      "validity_criterion": "The report accurately detects duplicate names and preserves enough file context for review.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The report lists catalog entries, exact duplicate counts, near-duplicate groups, and file references.",
+      "confidence": "medium for syntactic duplicate detection; low for semantic collision classification",
+      "uncertainty": "Near-duplicate heuristics and semantic collision status are not validated by the report itself."
+    },
+    "scope": {
+      "scope_conditions": "SSA callable move names present in the scanned catalog at report generation time.",
+      "scope_status": "narrowed",
+      "scope_preserved": ["move name", "occurrence count", "file references", "generated timestamp"],
+      "scope_lost": ["semantic equivalence", "current repo state after report generation"],
+      "prohibited_scope_extensions": [
+        "automatic deprecation",
+        "automatic merge",
+        "semantic equivalence claim",
+        "registry authority claim"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": ["collision-report generator", "SSA maintainer", "future compiler user"],
+      "recognizer_standing": "The generator has standing to report syntactic collisions; SSA maintainers have standing to decide merge/deprecation; compiler users may only treat collisions as triage signals.",
+      "authority_source": "SSA report-generation process and maintainer review.",
+      "uptake_path": "generated report -> maintainer review -> optional registry correction",
+      "distributed_standing": [
+        {
+          "recognizer": "collision-report generator",
+          "standing_scope": "detect duplicate move-name strings and report file references",
+          "standing_basis": "catalog scan"
+        },
+        {
+          "recognizer": "SSA maintainer",
+          "standing_scope": "decide whether duplicates are acceptable, mergeable, or defective",
+          "standing_basis": "SSA repository maintenance"
+        },
+        {
+          "recognizer": "future compiler user",
+          "standing_scope": "use report as a triage source only",
+          "standing_basis": "compiler source-selection discipline"
+        }
+      ],
+      "recognition_relation": ["detect", "triage", "review", "revise"],
+      "response_eligibility": ["open review", "flag candidate collision", "block automatic deprecation"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use duplicate move findings to guide registry maintenance.",
+      "action_policy": "Generated collision reports are triage artifacts, not registry-change authority.",
+      "licensed_consequence": "Prioritize manual review of named duplicate move groups.",
+      "license_basis": "Syntactic duplicate evidence plus preserved file references.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "automatic deprecation",
+        "automatic merge",
+        "semantic identity claim",
+        "claim that near-duplicates are actual collisions"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "SSA scan -> generated collision report -> maintainer or compiler triage",
+      "metadata_preserved": ["move name", "occurrence count", "file references"],
+      "metadata_lost": ["semantic context of each move body", "post-generation repository changes"]
+    },
+    "chain": {
+      "upstream_links": ["SSA callable move catalog", "report generation timestamp"],
+      "downstream_links": ["manual review", "possible registry correction", "compiler source selection"],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": ["merge/deprecate authority is absent from generated report"]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "syntactic collision triage",
+      "next_check": "Review a duplicate group manually before treating it as semantic collision."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "SSA maintainers for registry changes only",
+      "operator_instruction_reference": "Milestone 1H small batch scaffold-fill trial"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["syntactic_vs_semantic_collision"],
+      "notes": "This was the most useful ambiguous case: the carrier is highly legible, but consequence authority is narrow."
+    }
+  },
+  {
+    "record_id": "CDP-LADDER-BATCH-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Biological Maintenance To Cognitive Bounded Processing Boundary",
+      "path": "<workspace>/constraint-derivation-program/graph/derivation_ladder/cognitive/biological_to_cognitive_bounded_processing_boundary.md",
+      "artifact_type": "grounding_doc",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "CDP biological-to-cognitive ladder candidate",
+      "system_type": "derivation-ladder source-material candidate",
+      "boundary": "Candidate edge packet from biological maintenance constraints to cognitive bounded processing boundaries."
+    },
+    "carrier": {
+      "carrier_kind": "derivation-ladder markdown packet",
+      "carrier_state": "source-material draft with kernels, source regime, target candidate, edge fields, object terms, and claim ceiling",
+      "carrier_state_space": "kernel references, edge id, source and target levels, mechanism families, object terms, weakest-link statements, non-admission status",
+      "maintainer": "CDP graph derivation ladder and foundation discipline"
+    },
+    "use_episode": {
+      "use": "Use the packet as source material for derivation-ladder portability testing.",
+      "actor_context": "CDP derivation ladder review and FSST compiler batch trial",
+      "inference_drawn": "The packet may be treated as a bounded source-material candidate, not a production-admitted cognitive theory or edge.",
+      "inference_type": "derived-regime candidate routing",
+      "non_inferences": [
+        "The packet derives cognition from biology.",
+        "The edge is production-admitted.",
+        "Cognitive-science terms have native warrant from this packet alone.",
+        "The packet licenses psychological or agency claims."
+      ]
+    },
+    "binding": {
+      "binding_target": "candidate relation between biological maintenance constraints and cognitive bounded processing boundaries",
+      "binding_basis": ["operational", "referential", "frame-relative"],
+      "binding_mechanism": ["repository-maintained", "derivation discipline", "conventional"],
+      "claimed_mode": "source-material derived-regime candidate",
+      "operative_mode": "non-admitted derivation-ladder source packet"
+    },
+    "validity": {
+      "validity_criterion": "The packet preserves source kernels, source-regime status, weakest-link residue, and non-admission ceiling.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The document explicitly states source-material draft status, claim ceiling, source kernels, weakest link, and non-production-admitted status.",
+      "confidence": "medium for source-material routing; low for cognitive-native warrant",
+      "uncertainty": "Native cognitive/neuroscience warrant remains pending external source collection."
+    },
+    "scope": {
+      "scope_conditions": "CDP derivation-ladder portability testing for a biological-maintenance to cognitive-processing boundary candidate.",
+      "scope_status": "narrowed",
+      "scope_preserved": ["source kernels", "source ladder status", "weakest link", "object terms", "non-admission ceiling"],
+      "scope_lost": ["native cognitive science warrant", "production edge status"],
+      "prohibited_scope_extensions": [
+        "production edge admission",
+        "complete cognitive theory claim",
+        "psychology or agency derivation claim",
+        "native warrant upgrade"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": ["CDP ladder reviewer", "CDP promoter", "FSST compiler batch worker"],
+      "recognizer_standing": "Ladder reviewers can treat the packet as source material; promoters require additional gate inputs; FSST compiler workers can compile the artifact but cannot promote CDP graph status.",
+      "authority_source": "CDP derivation ladder discipline and packet claim ceiling.",
+      "uptake_path": "source-material packet -> ladder review -> possible revision or future promotion gate",
+      "distributed_standing": [
+        {
+          "recognizer": "CDP ladder reviewer",
+          "standing_scope": "review source-material candidate and weakest-link residue",
+          "standing_basis": "derivation ladder discipline"
+        },
+        {
+          "recognizer": "CDP promoter",
+          "standing_scope": "only later production admission if gate requirements are satisfied",
+          "standing_basis": "production graph admission gate"
+        },
+        {
+          "recognizer": "FSST compiler batch worker",
+          "standing_scope": "compile source packet into FSST compiler record for tooling pressure",
+          "standing_basis": "Milestone 1H batch trial"
+        }
+      ],
+      "recognition_relation": ["compile", "review", "defer", "promote"],
+      "response_eligibility": ["preserve claim ceiling", "flag native-warrant residue", "block production admission"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use the packet as a batch source for compiler-record translation and derivation-ladder review pressure.",
+      "action_policy": "Source-material candidate status and CDP ladder discipline.",
+      "licensed_consequence": "Compiler-record translation and source-material review pressure only.",
+      "license_basis": "Explicit source-material status, claim ceiling, non-admission statement, and weakest-link residue.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "production graph admission",
+        "native cognitive warrant claim",
+        "complete cognitive theory claim",
+        "agency or psychology derivation claim"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "CDP ladder packet -> FSST compiler batch record -> possible future CDP review",
+      "metadata_preserved": ["claim ceiling", "source kernels", "weakest link", "non-admission status"],
+      "metadata_lost": ["full source-specific evidence for cognitive terms"]
+    },
+    "chain": {
+      "upstream_links": ["source kernels", "biological maintenance boundary candidate", "derivation ladder discipline"],
+      "downstream_links": ["source-material review", "possible future production gate", "FSST batch pressure"],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": ["production admission and native cognitive warrant are absent"]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "source-material derivation-ladder candidate",
+      "next_check": "Collect native cognitive/neuroscience warrant before any promotion claim."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "CDP promoter only after separate gate review",
+      "operator_instruction_reference": "Milestone 1H small batch scaffold-fill trial"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["native_warrant_residue", "source_material_status"],
+      "notes": "The scaffold forced preservation of non-admission status and native-warrant residue."
+    }
+  }
+]

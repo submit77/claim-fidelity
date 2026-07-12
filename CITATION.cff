@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Claim Fidelity: A checked prototype for separating machine validity from licensed inference"
+authors:
+  - family-names: Weeldreyer
+    given-names: Jay
+type: software
+version: 0.1.0
+date-released: 2026-07-11
+license: Apache-2.0
+repository-code: "https://github.com/submit77/claim-fidelity"
+abstract: >-
+  A Lean 4 library and validator suite for separating machine validity from
+  licensed inference: how symbolic artifacts carry scope, standing, binding,
+  consequence licenses, and claim ceilings. Includes JSON compiler-record
+  schemas, refusal fixtures, a runnable claim-gap demonstration, and a
+  one-command local verification gate.

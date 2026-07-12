@@ -1,0 +1,702 @@
+[
+  {
+    "record_id": "REFUSAL-WARN-RATIFY-AS-PRODUCTION-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Refusal fixture: REFUSAL-WARN-RATIFY-AS-PRODUCTION-001",
+      "path": "<workspace>/constraint-derivation-program/ssa/constraint_derivation/runtime/review-decisions/review-decision-primitive_move_review_protocol-20260506t044637z-f07f03f5-ratify_candidate/review-decision.json",
+      "artifact_type": "runtime_packet",
+      "source_status": "runtime_design_candidate"
+    },
+    "symbolic_system": {
+      "system_name": "CDP ratify-candidate decision",
+      "system_type": "runtime decision artifact",
+      "boundary": "Typed review-consumer decision that transitions a packet from pending_review to admitted_test_artifact."
+    },
+    "carrier": {
+      "carrier_kind": "JSON review decision",
+      "carrier_state": "ratify_candidate decision with passing promotion and reflexive gates",
+      "carrier_state_space": "decision types, lifecycle transitions, gate findings, action token, warrant, witness artifacts",
+      "maintainer": "CDP review consumer and review-decisions directory"
+    },
+    "use_episode": {
+      "use": "Ratify a candidate as an admitted test artifact after review gates pass.",
+      "actor_context": "CDP review-promotion runtime",
+      "inference_drawn": "The candidate may move to admitted_test_artifact status, not automatically to production graph status.",
+      "inference_type": "lifecycle transition",
+      "non_inferences": [
+        "Admitted test artifact equals production graph admission.",
+        "Gate pass proves the domain claim.",
+        "The artifact is irreversible."
+      ]
+    },
+    "binding": {
+      "binding_target": "candidate lifecycle status under review-promotion runtime",
+      "binding_basis": [
+        "operational",
+        "codebook/conformance",
+        "normative/deontic"
+      ],
+      "binding_mechanism": [
+        "computational",
+        "institutional"
+      ],
+      "claimed_mode": "typed review decision",
+      "operative_mode": "runtime lifecycle transition record"
+    },
+    "validity": {
+      "validity_criterion": "Decision type, gate pass status, warrant, witness attestation, and lifecycle transition cohere.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "Decision type is ratify_candidate; promotion gate pass true; lifecycle transition reason states both gates passed.",
+      "confidence": "high for runtime decision shape; bounded for production consequence",
+      "uncertainty": "External model review is explicitly not integrated in Wave 5 MVP."
+    },
+    "scope": {
+      "scope_conditions": "The candidate associated with the primitive_move_review_protocol packet and its admitted-test lifecycle transition.",
+      "scope_status": "narrowed",
+      "scope_preserved": [
+        "packet reference",
+        "gate results",
+        "lifecycle transition",
+        "warrant"
+      ],
+      "scope_lost": [
+        "external model review"
+      ],
+      "prohibited_scope_extensions": [
+        "canonical production graph admission",
+        "empirical truth certification",
+        "kernel status"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": [
+        "review consumer",
+        "constraint_derivation_runtime",
+        "future promoter"
+      ],
+      "recognizer_standing": "Review consumer has standing over review decision emission; runtime has uptake standing; promoter standing remains downstream.",
+      "authority_source": "Wave 5 review-promotion runtime and review consumer contract.",
+      "uptake_path": "review packet -> ratify_candidate decision -> admitted-test artifact",
+      "distributed_standing": [
+        {
+          "recognizer": "review consumer",
+          "standing_scope": "emit typed review decision",
+          "standing_basis": "Wave 5 review-promotion runtime"
+        },
+        {
+          "recognizer": "constraint_derivation_runtime",
+          "standing_scope": "receive decision uptake",
+          "standing_basis": "runtime role in action token"
+        },
+        {
+          "recognizer": "future promoter",
+          "standing_scope": "evaluate possible production promotion later",
+          "standing_basis": "separate production gate"
+        }
+      ],
+      "recognition_relation": [
+        "ratify",
+        "receive",
+        "route"
+      ],
+      "response_eligibility": [
+        "admit as test artifact",
+        "preserve warrant",
+        "defer production"
+      ]
+    },
+    "policy_license": {
+      "attempted_consequence": "Admit candidate to production graph from ratify_candidate decision.",
+      "action_policy": "Both promotion and reflexive gates must pass independently.",
+      "licensed_consequence": "Production graph admission.",
+      "license_basis": "Passing gates, warrant, action-token uptake, and witness attestation.",
+      "consequence_status": "licensed",
+      "all_or_refuse_policy": true,
+      "blocked_consequences": [
+        "production graph admission",
+        "domain certainty upgrade",
+        "bypassing later promoter checks"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "review packet -> review decision JSON -> admitted-test artifact path",
+      "metadata_preserved": [
+        "packet reference",
+        "decision type",
+        "gate pass",
+        "warrant",
+        "action token"
+      ],
+      "metadata_lost": [
+        "external model review"
+      ]
+    },
+    "chain": {
+      "upstream_links": [
+        "review packet",
+        "promotion gate",
+        "reflexive gate"
+      ],
+      "downstream_links": [
+        "admitted-test artifact",
+        "possible future promotion"
+      ],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": [
+        "production promoter standing absent"
+      ]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "production admission",
+      "next_check": "Validator should warn that promotion/admission is licensed while chain is not all_links_licensed."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "absent",
+      "promotion_authority": "review_consumer for test-artifact admission only",
+      "operator_instruction_reference": "docs/runtime/dispatcher_spec_v0.3.md"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": [
+        "standing_scope",
+        "licensed lifecycle transition"
+      ],
+      "notes": "Positive decisions still need claim ceilings because valid local gates do not license broader production consequences."
+    }
+  },
+  {
+    "record_id": "REFUSAL-WARN-EMPIRICAL-TRUTH-CEILING-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Refusal fixture: REFUSAL-WARN-EMPIRICAL-TRUTH-CEILING-001",
+      "path": "<workspace>/constraint-derivation-program/ssa/constraint_derivation/runtime/kernel-admission/admissions/node.kernel.thermodynamic_degradation_entropy_maintenance_cost.json",
+      "artifact_type": "admission_gate",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "CDP kernel node admission",
+      "system_type": "kernel admission record",
+      "boundary": "Admission record linking a kernel node candidate, operator instruction, gate result, source evidence, and admitted node reference."
+    },
+    "carrier": {
+      "carrier_kind": "JSON admission record",
+      "carrier_state": "kernel_admit decision for node.kernel.thermodynamic_degradation_entropy_maintenance_cost",
+      "carrier_state_space": "node ids, gate pass/fail, operator instruction refs, admitted node refs, route traces, witness artifacts",
+      "maintainer": "CDP kernel admission runtime and admitted graph/kernel directories"
+    },
+    "use_episode": {
+      "use": "Admit a kernel node candidate under an operator instruction and kernel gate.",
+      "actor_context": "CDP kernel admission workflow",
+      "inference_drawn": "The named node is admitted under the kernel admission rule and source evidence envelope.",
+      "inference_type": "kernel admission",
+      "non_inferences": [
+        "The admission licenses unrelated kernel nodes.",
+        "The operator instruction licenses all future uses.",
+        "The node is beyond later correction."
+      ]
+    },
+    "binding": {
+      "binding_target": "one kernel node candidate and its admitted-node reference",
+      "binding_basis": [
+        "operational",
+        "codebook/conformance",
+        "normative/deontic"
+      ],
+      "binding_mechanism": [
+        "computational",
+        "institutional",
+        "repository-maintained"
+      ],
+      "claimed_mode": "kernel node admission",
+      "operative_mode": "operator-instruction-bounded admission record"
+    },
+    "validity": {
+      "validity_criterion": "Admission requires matching node id, source evidence, operator instruction, route trace, and passing kernel gate result.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "Record contains decision kernel_admit, admitted_node_ref, operator_instruction_ref, source_evidence_ref, and kernel_gate_result.",
+      "confidence": "high for admission-record structure; unassessed for all future downstream implications",
+      "uncertainty": "The record summary does not independently verify source-evidence sufficiency."
+    },
+    "scope": {
+      "scope_conditions": "The named thermodynamic degradation kernel node and the specific operator instruction envelope.",
+      "scope_status": "narrowed",
+      "scope_preserved": [
+        "node id",
+        "operator instruction reference",
+        "source evidence reference",
+        "admitted node reference"
+      ],
+      "scope_lost": [],
+      "prohibited_scope_extensions": [
+        "adjacent kernel claims",
+        "unstated physical theorem",
+        "unbounded downstream admission"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": [
+        "operator instruction",
+        "kernel gate",
+        "schema validator",
+        "kernel promoter"
+      ],
+      "recognizer_standing": "Admission standing is distributed across operator instruction, gate result, schema shape, and promoter execution.",
+      "authority_source": "family://reality-integration-ops/claims/completed/2026-05-05-thermodynamic-kernel-pass.yaml plus CDP kernel gate.",
+      "uptake_path": "operator instruction -> kernel gate -> admission record -> admitted node ref",
+      "distributed_standing": [
+        {
+          "recognizer": "operator instruction",
+          "standing_scope": "authorize this kernel pass envelope",
+          "standing_basis": "family claim completion reference"
+        },
+        {
+          "recognizer": "kernel gate",
+          "standing_scope": "evaluate admission criteria",
+          "standing_basis": "kernel admission protocol"
+        },
+        {
+          "recognizer": "kernel promoter",
+          "standing_scope": "write admitted node reference",
+          "standing_basis": "passing gate and operator instruction"
+        }
+      ],
+      "recognition_relation": [
+        "authorize",
+        "validate",
+        "admit"
+      ],
+      "response_eligibility": [
+        "admit node",
+        "write admission record",
+        "preserve route trace"
+      ]
+    },
+    "policy_license": {
+      "attempted_consequence": "Admit the named kernel node.",
+      "action_policy": "Kernel admission gate plus operator instruction envelope.",
+      "licensed_consequence": "Admission of node.kernel.thermodynamic_degradation_entropy_maintenance_cost only.",
+      "license_basis": "Passing gate, matching source evidence, operator instruction, and node identity.",
+      "consequence_status": "licensed",
+      "all_or_refuse_policy": true,
+      "blocked_consequences": [
+        "admitting neighboring nodes",
+        "raising all related claims to kernel status",
+        "dropping route trace or source evidence"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "kernel node candidate -> gate result -> admission record -> admitted node file",
+      "metadata_preserved": [
+        "node id",
+        "operator instruction",
+        "source evidence",
+        "route trace",
+        "admitted reference"
+      ],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": [
+        "node candidate",
+        "source evidence",
+        "operator instruction",
+        "kernel gate"
+      ],
+      "downstream_links": [
+        "admitted node",
+        "future derivation use"
+      ],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": []
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "empirical truth certification for thermodynamic degradation",
+      "next_check": "Validator should warn on overclaiming truth/empirical ceiling and draft licensed status."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "absent",
+      "promotion_authority": "kernel gate and promoter within operator-instruction envelope",
+      "operator_instruction_reference": "family://reality-integration-ops/claims/completed/2026-05-05-thermodynamic-kernel-pass.yaml"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": [
+        "operator_instruction_reference",
+        "distributed_standing"
+      ],
+      "notes": "Kernel admission shows why standing is not a single recognizer property."
+    }
+  },
+  {
+    "record_id": "REFUSAL-WARN-SCOPE-STRIPPED-LADDER-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Refusal fixture: REFUSAL-WARN-SCOPE-STRIPPED-LADDER-001",
+      "path": "<workspace>/constraint-derivation-program/ssa/constraint_derivation/runtime/move-outputs/derivation_ladder_structuring_protocol-20260505T223629Z-333e8e6b/move.ladder_mechanism_map.json",
+      "artifact_type": "runtime_packet",
+      "source_status": "runtime_design_candidate"
+    },
+    "symbolic_system": {
+      "system_name": "CDP ladder mechanism map move output",
+      "system_type": "derivation-boundary artifact",
+      "boundary": "Output of move.ladder_mechanism_map describing source and target levels, mechanism families, weakest link, and packet claim ceiling."
+    },
+    "carrier": {
+      "carrier_kind": "JSON move output",
+      "carrier_state": "ladder mechanism map with cross_level_map, mechanism_family, weakest_link_in_chain, and packet_claim_ceiling",
+      "carrier_state_space": "source and target levels, side statuses, mechanism families, cross-level mappings, weakest-link fields",
+      "maintainer": "CDP derivation ladder runtime"
+    },
+    "use_episode": {
+      "use": "Represent a cross-level derivation map without overclaiming derivation closure.",
+      "actor_context": "CDP derivation ladder structuring protocol",
+      "inference_drawn": "The move output can guide review of cross-level mechanism structure within its packet claim ceiling.",
+      "inference_type": "derivation boundary mapping",
+      "non_inferences": [
+        "The derivation is complete.",
+        "The cross-level map proves the target claim.",
+        "The weakest link has been repaired."
+      ]
+    },
+    "binding": {
+      "binding_target": "cross-level mechanism relation and claim ceiling",
+      "binding_basis": [
+        "operational",
+        "frame-relative",
+        "codebook/conformance"
+      ],
+      "binding_mechanism": [
+        "computational",
+        "documented workflow"
+      ],
+      "claimed_mode": "mechanism map output",
+      "operative_mode": "derivation-boundary metadata carrier"
+    },
+    "validity": {
+      "validity_criterion": "The output preserves source level, target level, mechanism family, weakest link, and packet claim ceiling fields.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "Output contains cross_level_map, mechanism_family, packet_claim_ceiling, source and target status fields, and weakest_link_in_chain.",
+      "confidence": "medium",
+      "uncertainty": "The move does not establish final derivation validity or close all open possibilities."
+    },
+    "scope": {
+      "scope_conditions": "The single derivation_ladder_structuring_protocol run and its mapped source-target relation.",
+      "scope_status": "stripped",
+      "scope_preserved": [
+        "source level",
+        "target level",
+        "mechanism family",
+        "weakest link",
+        "packet claim ceiling"
+      ],
+      "scope_lost": [],
+      "prohibited_scope_extensions": [
+        "derivation closure",
+        "admission of target claim",
+        "removal of weakest-link residue"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": [
+        "move runner",
+        "ladder reviewer",
+        "future promoter"
+      ],
+      "recognizer_standing": "Move runner has standing to emit mechanism metadata; reviewers/promoters must separately assess whether the derivation chain licenses downstream use.",
+      "authority_source": "derivation ladder structuring protocol and move output contract.",
+      "uptake_path": "ladder move output -> review packet -> possible derivation revision or admission",
+      "distributed_standing": [
+        {
+          "recognizer": "move runner",
+          "standing_scope": "emit cross-level map fields",
+          "standing_basis": "move output contract"
+        },
+        {
+          "recognizer": "ladder reviewer",
+          "standing_scope": "evaluate weakest-link and claim-ceiling implications",
+          "standing_basis": "review protocol"
+        },
+        {
+          "recognizer": "future promoter",
+          "standing_scope": "only later admission if chain is licensed",
+          "standing_basis": "promotion gate"
+        }
+      ],
+      "recognition_relation": [
+        "emit",
+        "map",
+        "review",
+        "defer"
+      ],
+      "response_eligibility": [
+        "preserve claim ceiling",
+        "flag weakest link",
+        "block closure claim"
+      ]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use cross-level map as a derivation guide.",
+      "action_policy": "Packet claim ceiling and weakest-link residue constrain downstream use.",
+      "licensed_consequence": "Use as derivation guide after stripped metadata.",
+      "license_basis": "Successful move output contract and explicit packet claim ceiling.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "derivation closure",
+        "target claim admission",
+        "cross-level certainty laundering"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "ladder move output -> review packet -> derivation review",
+      "metadata_preserved": [
+        "packet claim ceiling",
+        "weakest link",
+        "source and target levels",
+        "mechanism family"
+      ],
+      "metadata_lost": [
+        "scope",
+        "packet claim ceiling",
+        "weakest link"
+      ]
+    },
+    "chain": {
+      "upstream_links": [
+        "source ladder cell",
+        "target level",
+        "move output contract"
+      ],
+      "downstream_links": [
+        "review packet",
+        "future derivation candidate"
+      ],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": [
+        "closure and admission are not licensed by map output alone"
+      ]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "derivation-boundary metadata artifact",
+      "next_check": "Validator should warn on licensing after scope metadata stripping."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "absent",
+      "promotion_authority": "none at move-output level",
+      "operator_instruction_reference": "move_id: move.ladder_mechanism_map"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "moderate",
+      "new_field_pressure": [
+        "weakest-link preservation",
+        "claim-ceiling survival"
+      ],
+      "notes": "This record makes metadata survival the central consequence-license issue."
+    }
+  },
+  {
+    "record_id": "REFUSAL-WARN-DRAFT-RESTRICTED-LICENSE-CONTRAST-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Refusal fixture: REFUSAL-WARN-DRAFT-RESTRICTED-LICENSE-CONTRAST-001",
+      "path": "<workspace>/constraint-derivation-program/ssa/constraint_derivation/runtime/review-queue/primitive_move_review_protocol-20260506T044637Z-f07f03f5/review-packet.json",
+      "artifact_type": "runtime_packet",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "CDP review packet runtime",
+      "system_type": "runtime review carrier",
+      "boundary": "Aggregate packet that collects move outputs, action tokens, review questions, witness artifacts, and graph-admission authorization status for one protocol run."
+    },
+    "carrier": {
+      "carrier_kind": "JSON runtime packet",
+      "carrier_state": "review packet with action tokens, candidate outputs, move chain, witness artifacts, and graph_admission_authorized false",
+      "carrier_state_space": "protocol ids, candidate output maps, move-output paths, review policy flags, witness records, admission authorization fields",
+      "maintainer": "CDP runtime dispatcher and review queue filesystem"
+    },
+    "use_episode": {
+      "use": "Route a completed move chain into review without admitting it to the graph.",
+      "actor_context": "CDP runtime review flow",
+      "inference_drawn": "The packet is eligible for review consumption but does not itself authorize graph admission.",
+      "inference_type": "runtime routing",
+      "non_inferences": [
+        "The candidate outputs are graph-admitted.",
+        "Every move output is true.",
+        "Review eligibility is equivalent to production promotion."
+      ]
+    },
+    "binding": {
+      "binding_target": "one runtime protocol run and its candidate move outputs",
+      "binding_basis": [
+        "operational",
+        "codebook/conformance",
+        "frame-relative"
+      ],
+      "binding_mechanism": [
+        "computational",
+        "repository-maintained"
+      ],
+      "claimed_mode": "runtime review packet",
+      "operative_mode": "review-queue carrier and routing input"
+    },
+    "validity": {
+      "validity_criterion": "Packet accurately preserves move outputs, action tokens, witness artifacts, and admission authorization flags from the run.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The JSON contains 15 action tokens, 15 move outputs, promotion_review_eligible true, and graph_admission_authorized false.",
+      "confidence": "high for runtime shape; not assessed for domain truth of the candidate outputs",
+      "uncertainty": "The record does not independently verify each witness artifact or move output."
+    },
+    "scope": {
+      "scope_conditions": "The specific primitive_move_review_protocol run identified by review_packet_id.",
+      "scope_status": "narrowed",
+      "scope_preserved": [
+        "run id",
+        "protocol id",
+        "move chain",
+        "review eligibility",
+        "graph admission not authorized"
+      ],
+      "scope_lost": [],
+      "prohibited_scope_extensions": [
+        "production graph admission",
+        "kernel admission",
+        "domain warrant upgrade"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": [
+        "review consumer",
+        "runtime dispatcher",
+        "future promoter"
+      ],
+      "recognizer_standing": "Review consumer has standing to consume the packet for a review decision; promoter standing is downstream and not granted by packet presence.",
+      "authority_source": "CDP runtime review policy and dispatcher output contract.",
+      "uptake_path": "move outputs -> review packet -> review consumer -> decision artifact",
+      "distributed_standing": [
+        {
+          "recognizer": "runtime dispatcher",
+          "standing_scope": "emit review packet from a completed run",
+          "standing_basis": "runtime protocol execution"
+        },
+        {
+          "recognizer": "review consumer",
+          "standing_scope": "consume packet into typed review decision",
+          "standing_basis": "review-promotion runtime"
+        },
+        {
+          "recognizer": "promoter",
+          "standing_scope": "only later promotion or refusal after decision and gates",
+          "standing_basis": "promotion gate, not packet presence"
+        }
+      ],
+      "recognition_relation": [
+        "route",
+        "consume",
+        "review"
+      ],
+      "response_eligibility": [
+        "emit review decision",
+        "defer",
+        "request revision",
+        "ratify candidate"
+      ]
+    },
+    "policy_license": {
+      "attempted_consequence": "Treat the packet as ready for review and possible downstream decision.",
+      "action_policy": "Review packet policy with graph_admission_authorized false.",
+      "licensed_consequence": "Review consumption and decision generation only.",
+      "license_basis": "Review eligibility, packet shape, witness artifacts, and explicit non-admission flag.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "graph admission",
+        "confidence upgrade",
+        "promotion without review decision"
+      ]
+    },
+    "transmission": {
+      "transmission_path": "move execution -> review packet JSON -> review consumer",
+      "metadata_preserved": [
+        "protocol id",
+        "run id",
+        "move chain",
+        "admission flag",
+        "witness artifacts"
+      ],
+      "metadata_lost": [
+        "external cold-review judgment"
+      ]
+    },
+    "chain": {
+      "upstream_links": [
+        "move outputs",
+        "action tokens",
+        "witness artifacts"
+      ],
+      "downstream_links": [
+        "review decision",
+        "possible revision queue",
+        "possible admitted-test artifact"
+      ],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": [
+        "promotion is not licensed by packet alone"
+      ]
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "runtime review-routing artifact",
+      "next_check": "Validator should not warn merely because a draft source has restricted license and explicit blocked consequences."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.2"
+    },
+    "review": {
+      "cold_review_status": "absent",
+      "promotion_authority": "review consumer only; no production promoter authority",
+      "operator_instruction_reference": "review_packet_id: review-packet-primitive_move_review_protocol-20260506T044637Z-f07f03f5"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": [
+        "distributed_standing",
+        "all_or_refuse_policy",
+        "record_validation_status"
+      ],
+      "notes": "The packet is operative and consequential, but the licensed consequence is narrower than downstream promotion."
+    }
+  }
+]

@@ -1,0 +1,557 @@
+[
+  {
+    "record_id": "RAE-GOV-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "reality-alignment-engine",
+      "artifact": "Program Governance v0.1",
+      "path": "<workspace>/reality-alignment-engine/docs/governance/program_governance_v0.1.md",
+      "artifact_type": "governance_doc",
+      "source_status": "canonical"
+    },
+    "symbolic_system": {
+      "system_name": "RAE program governance",
+      "system_type": "program-governance symbolic system",
+      "boundary": "Rules governing claim ceilings, separation, non-laundering, cold review, and reflexive audit for RAE artifacts."
+    },
+    "carrier": {
+      "carrier_kind": "governance text",
+      "carrier_state": "seed governance rules with typed claims, scoped validity, licensed consequences, and reflexive audit requirements",
+      "carrier_state_space": "rule statements, separation rules, claim ceilings, non-laundering prohibitions, cold-review triggers, audit prompts",
+      "maintainer": "RAE repo maintainers through changelog, program docs, and future review"
+    },
+    "use_episode": {
+      "use": "Use governance rules to decide whether a project artifact may be promoted, reused, or treated as licensed precedent.",
+      "actor_context": "future RAE/FSST/CDP work sessions",
+      "inference_drawn": "An artifact with declared claim ceiling, scope, native warrant, correction, and non-laundering discipline may guide next work within that ceiling.",
+      "inference_type": "governance authorization",
+      "non_inferences": [
+        "The artifact is true because it follows governance.",
+        "Governance compliance grants empirical warrant.",
+        "A reusable floor or intervention pattern may be promoted without cold review."
+      ]
+    },
+    "binding": {
+      "binding_target": "RAE artifact promotion and use discipline",
+      "binding_basis": ["normative/deontic", "operational", "frame-relative"],
+      "binding_mechanism": ["institutional", "conventional", "repository-maintained"],
+      "claimed_mode": "governance discipline",
+      "operative_mode": "program rule surface for future work"
+    },
+    "validity": {
+      "validity_criterion": "Artifact use preserves declared claim ceiling, scope, warrant source, correction regime, and non-laundering rules.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The document explicitly states governance rules and cold review triggers.",
+      "confidence": "high for local governance intent; untested for repeated future use",
+      "uncertainty": "No cold-review implementation or automated enforcement exists yet."
+    },
+    "scope": {
+      "scope_conditions": "RAE family artifacts and major promotion/use decisions.",
+      "scope_status": "preserved",
+      "scope_preserved": ["claim ceiling", "non-laundering rules", "cold review triggers"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": [
+        "Treating governance compliance as empirical truth.",
+        "Using governance text as production runtime."
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": ["repo maintainers", "future Codex sessions", "cold reviewers"],
+      "recognizer_standing": "Standing is granted by project-maintainer adoption and later cold-review use; not by the document alone.",
+      "authority_source": "RAE program repo and maintainer recognition.",
+      "uptake_path": "README/current-state references, changelog, workstream use, cold-review discipline.",
+      "recognition_relation": ["apply", "enforce", "contest", "revise"],
+      "response_eligibility": ["block overclaim", "require cold review", "demote claim", "record remainder"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Allow or block artifact promotion/use.",
+      "action_policy": "Program governance non-laundering and cold-review rules.",
+      "licensed_consequence": "Governance may require demotion, review, or blocked promotion within RAE scope.",
+      "license_basis": "Rule text plus recognizer standing plus project scope.",
+      "consequence_status": "licensed_with_restriction",
+      "blocked_consequences": ["declaring truth", "production runtime promotion", "bypassing cold review"]
+    },
+    "transmission": {
+      "transmission_path": "governance doc -> future project work -> artifact promotion decisions",
+      "metadata_preserved": ["claim ceiling", "scope", "non-laundering rule"],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": ["program charter", "stack architecture"],
+      "downstream_links": ["situation packets", "workstream decisions", "future schema promotion"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": []
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "governance discipline",
+      "next_check": "Cold-review trigger needs executable or procedural support."
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "moderate",
+      "new_field_pressure": ["promotion_authority", "cold_review_status"],
+      "notes": "The artifact requires the full chain because its consequence depends on governance use by standing recognizers."
+    }
+  },
+  {
+    "record_id": "RAE-RUN-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "reality-alignment-engine",
+      "artifact": "Situation Alignment Packet v0.1",
+      "path": "<workspace>/reality-alignment-engine/docs/runtime/situation_alignment_packet_v0.1.md",
+      "artifact_type": "runtime_packet",
+      "source_status": "runtime_design_candidate"
+    },
+    "symbolic_system": {
+      "system_name": "RAE situation alignment packet",
+      "system_type": "runtime-orientation packet grammar",
+      "boundary": "Packet fields for actuality, possibility, reachability, floors, response ecology, symbolic carriers, interventions, licensed actions, remainder, and return capture."
+    },
+    "carrier": {
+      "carrier_kind": "packet grammar",
+      "carrier_state": "structured YAML-like packet sections and questions",
+      "carrier_state_space": "header fields, claim lists, floor records, intervention records, action licenses, remainder entries",
+      "maintainer": "RAE runtime docs and packet pilot runs"
+    },
+    "use_episode": {
+      "use": "Fill a packet to orient action in a bounded situation.",
+      "actor_context": "RAE manual pilot or future runtime work",
+      "inference_drawn": "A completed packet can identify licensed actions and blocked consequences for a bounded acting system.",
+      "inference_type": "runtime action orientation",
+      "non_inferences": [
+        "The packet guarantees success.",
+        "All relevant parties or floors have been captured.",
+        "A packet field is equivalent to reality."
+      ]
+    },
+    "binding": {
+      "binding_target": "bounded situation and acting-system response ecology",
+      "binding_basis": ["operational", "referential", "frame-relative"],
+      "binding_mechanism": ["documented workflow", "manual review", "future runtime"],
+      "claimed_mode": "runtime design candidate",
+      "operative_mode": "manual packet grammar"
+    },
+    "validity": {
+      "validity_criterion": "Packet fields are filled with evidence, scope, confidence, licensed actions, unlicensed actions, and remainder.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The packet grammar names the relevant fields and has been used in RAE runs.",
+      "confidence": "medium",
+      "uncertainty": "No schema validation or cold review is required by the packet itself."
+    },
+    "scope": {
+      "scope_conditions": "Bounded situations where a named acting system and horizon are specified.",
+      "scope_status": "narrowed",
+      "scope_preserved": ["acting system", "horizon", "claim ceiling", "licensed/unlicensed actions"],
+      "scope_lost": ["recognizer standing is not yet explicit in the packet schema"],
+      "prohibited_scope_extensions": ["treating packet completion as action success", "using packet without evidence"]
+    },
+    "recognition_authority": {
+      "recognizers": ["packet author", "acting system", "affected reviewers", "future cold reviewer"],
+      "recognizer_standing": "Standing depends on role, affected-party relation, and authority to act in the situation.",
+      "authority_source": "acting-system authority plus governance/cold-review rules",
+      "uptake_path": "packet readback, decision use, return-capture review",
+      "recognition_relation": ["fill", "review", "act", "correct"],
+      "response_eligibility": ["orient action", "block action", "record remainder", "trigger correction"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use packet to guide action.",
+      "action_policy": "Packet action-license section plus RAE governance non-laundering rules.",
+      "licensed_consequence": "Bounded action guidance when prerequisites, scope, non-claims, and blocked consequences are preserved.",
+      "license_basis": "Completed fields, source evidence, recognizer standing, and governance discipline.",
+      "consequence_status": "licensed_with_restriction",
+      "blocked_consequences": ["autonomous production action", "unreviewed precedent", "claim ceiling upgrade"]
+    },
+    "transmission": {
+      "transmission_path": "runtime packet doc -> template -> run packet -> future decision",
+      "metadata_preserved": ["claim ceiling", "scope boundary", "licensed actions", "remainder"],
+      "metadata_lost": ["standing criteria", "schema validation status"]
+    },
+    "chain": {
+      "upstream_links": ["program charter", "program governance"],
+      "downstream_links": ["manual pilots", "runtime implementation", "return capture"],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": ["packet schema does not yet require recognizer standing"]
+    },
+    "verdict": {
+      "verdict": "requires_correction",
+      "claim_ceiling": "runtime design candidate",
+      "next_check": "Add schema-backed standing and validation fields before stronger runtime claims."
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["recognizer_standing", "validation_status", "cold_review_status"],
+      "notes": "A packet's licensed action depends on persistent packet grammar, use episode, standing, and action policy together."
+    }
+  },
+  {
+    "record_id": "FSST-NF-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "formal-symbolic-systems-theory",
+      "artifact": "FSST Structural Normal Form v0.1",
+      "path": "<workspace>/formal-symbolic-systems-theory/docs/formation/14_structural_normal_form_v0.1.md",
+      "artifact_type": "normal_form",
+      "source_status": "active_candidate"
+    },
+    "symbolic_system": {
+      "system_name": "FSST structural normal form",
+      "system_type": "compiler target schema prose",
+      "boundary": "Reusable record fields for compiling symbolic artifacts into carrier, binding, validity, scope, recognition, consequence, transmission, chain, failure, residue, and verdict structure."
+    },
+    "carrier": {
+      "carrier_kind": "normal-form document",
+      "carrier_state": "v0.1 field grammar with recognition and action-policy fields",
+      "carrier_state_space": "field names, field definitions, verdict classes, pressure-test examples",
+      "maintainer": "FSST formation docs"
+    },
+    "use_episode": {
+      "use": "Compile an artifact into structural record fields.",
+      "actor_context": "FSST compiler-seed work and future runtime checker",
+      "inference_drawn": "A symbolic artifact can be made auditable by filling the normal-form fields.",
+      "inference_type": "compiler target",
+      "non_inferences": [
+        "The compiler understands all domain semantics.",
+        "A filled record proves the source artifact is valid.",
+        "The v0.1 fields are final primitives."
+      ]
+    },
+    "binding": {
+      "binding_target": "structure-preserving representation of symbolic artifact use",
+      "binding_basis": ["operational", "codebook/conformance", "frame-relative"],
+      "binding_mechanism": ["documented schema", "manual compiler discipline"],
+      "claimed_mode": "structural normal form",
+      "operative_mode": "prose schema plus pilot record target"
+    },
+    "validity": {
+      "validity_criterion": "Fields preserve source, carrier, use, validity, scope, standing, policy, transmission, chain, residue, and claim ceiling without overclaim.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "Survived first and adversarial compiler seeds; now has schema pilot.",
+      "confidence": "medium-high",
+      "uncertainty": "The compact schema may reveal field pressure not yet reflected in full prose."
+    },
+    "scope": {
+      "scope_conditions": "Manual and future semi-structured compilation of symbolic artifacts.",
+      "scope_status": "preserved",
+      "scope_preserved": ["source", "carrier", "use", "standing", "policy", "verdict"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": ["domain truth proof", "final ontology", "automated extraction claim"]
+    },
+    "recognition_authority": {
+      "recognizers": ["FSST maintainers", "compiler users", "schema validators"],
+      "recognizer_standing": "Standing depends on using the schema within FSST claim ceilings and preserving source evidence.",
+      "authority_source": "FSST formation doctrine and compiler seed results",
+      "uptake_path": "schema adoption, pilot records, validation checks",
+      "recognition_relation": ["compile", "validate", "flag", "revise"],
+      "response_eligibility": ["accept record", "reject malformed record", "flag residue"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use normal-form records as compiler artifacts.",
+      "action_policy": "Schema validation plus claim-ceiling discipline.",
+      "licensed_consequence": "Treat a valid record as a structural audit object.",
+      "license_basis": "Field conformance, source preservation, standing, and claim ceiling.",
+      "consequence_status": "licensed_with_restriction",
+      "blocked_consequences": ["truth certification", "primitive closure", "production compiler claim"]
+    },
+    "transmission": {
+      "transmission_path": "normal-form prose -> JSON schema -> compiled records -> future checker",
+      "metadata_preserved": ["claim ceiling", "standing", "policy license", "scope"],
+      "metadata_lost": ["some rich prose nuance compressed by compact schema"]
+    },
+    "chain": {
+      "upstream_links": ["compiler seed", "adversarial seed", "Lean predicate slices"],
+      "downstream_links": ["schema validation", "project artifact pilot", "runtime checker"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": []
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "schema candidate",
+      "next_check": "Validate compact schema against project artifacts."
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["record_validation_status", "schema_version", "composition_status"],
+      "notes": "The normal form itself can only license compiler use if object, episode, standing, and policy are all represented."
+    }
+  },
+  {
+    "record_id": "FSST-FORM-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "formal-symbolic-systems-theory",
+      "artifact": "FSST Formalization Targets v0.1",
+      "path": "<workspace>/formal-symbolic-systems-theory/docs/formation/10_formalization_targets_v0.1.md",
+      "artifact_type": "formalization_target",
+      "source_status": "active_candidate"
+    },
+    "symbolic_system": {
+      "system_name": "FSST formalization target surface",
+      "system_type": "proof-target governance artifact",
+      "boundary": "Targets for abstract Lean predicates and watch conditions for future integration."
+    },
+    "carrier": {
+      "carrier_kind": "formalization-target document",
+      "carrier_state": "predicate lists, theorem targets, checked-slice direction, composition watch condition",
+      "carrier_state_space": "type names, predicate signatures, theorem targets, claim ceilings",
+      "maintainer": "FSST formation and formal directories"
+    },
+    "use_episode": {
+      "use": "Select or constrain next Lean formalization work.",
+      "actor_context": "FSST proof development",
+      "inference_drawn": "A predicate or theorem target is eligible for Lean work when corpus pressure or prior cases make it load-bearing.",
+      "inference_type": "formalization governance",
+      "non_inferences": [
+        "A listed target has already been proved.",
+        "Formalization target status grants domain warrant.",
+        "The composition watch condition is a current formal target."
+      ]
+    },
+    "binding": {
+      "binding_target": "Lean formalization sequencing and claim ceilings",
+      "binding_basis": ["operational", "codebook/conformance", "normative/deontic"],
+      "binding_mechanism": ["formation docs", "AXLE reports", "Lean files"],
+      "claimed_mode": "formalization target guidance",
+      "operative_mode": "proof-work queue and guardrail"
+    },
+    "validity": {
+      "validity_criterion": "Formal targets match discovered structural pressure and preserve non-claims.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "ConsequencePolicy and RecognitionAuthority were selected from corpus pressure and AXLE-checked.",
+      "confidence": "medium-high",
+      "uncertainty": "The exact integration theorem is deferred until project artifacts pressure it."
+    },
+    "scope": {
+      "scope_conditions": "FSST abstract Lean targets and proof-governance surfaces.",
+      "scope_status": "preserved",
+      "scope_preserved": ["claim ceiling", "abstract predicate status", "composition watch condition"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": ["domain proof", "required integration file absent pressure"]
+    },
+    "recognition_authority": {
+      "recognizers": ["FSST proof worker", "AXLE", "project maintainer"],
+      "recognizer_standing": "Standing is split: AXLE recognizes Lean validity; maintainers recognize target relevance.",
+      "authority_source": "AXLE for syntax/proof checking; FSST formation docs for target selection.",
+      "uptake_path": "formal target doc -> Lean file -> AXLE report -> doctrine list",
+      "recognition_relation": ["select", "check", "verify", "defer"],
+      "response_eligibility": ["formalize", "defer", "demote", "record result"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Start or defer Lean integration work.",
+      "action_policy": "Corpus-pressure discipline and composition watch condition.",
+      "licensed_consequence": "Do isolated or integration Lean work only when artifact pressure warrants it.",
+      "license_basis": "Recognized target relevance plus proof-checking route.",
+      "consequence_status": "licensed_with_restriction",
+      "blocked_consequences": ["forcing integration", "treating proof as empirical warrant"]
+    },
+    "transmission": {
+      "transmission_path": "formation target doc -> Lean implementation -> AXLE result -> future formal core",
+      "metadata_preserved": ["target status", "claim ceiling", "proof result"],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": ["worked cases", "compiler seeds", "AXLE reports"],
+      "downstream_links": ["future Lean slices", "possible integration file"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": []
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "formalization target",
+      "next_check": "1C should determine whether integration pressure is strong enough."
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["target_selection_warrant", "proof_authority_split"],
+      "notes": "This record exposes two recognizers with different standing: AXLE for proof validity and corpus pressure for relevance."
+    }
+  },
+  {
+    "record_id": "CDP-REF-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "CDP Reflexive Symbolic-System Audit v0.1",
+      "path": "<workspace>/constraint-derivation-program/docs/runtime/cdp_reflexive_symbolic_system_audit_v0.1.md",
+      "artifact_type": "reflexive_audit",
+      "source_status": "active_candidate"
+    },
+    "symbolic_system": {
+      "system_name": "CDP reflexive symbolic-system audit",
+      "system_type": "meta-governance audit protocol",
+      "boundary": "Audit prompts for CDP artifacts as maintained symbolic carrier-regimes."
+    },
+    "carrier": {
+      "carrier_kind": "audit protocol text",
+      "carrier_state": "active candidate meta-governance with no production graph/kernel/formal claim authorization",
+      "carrier_state_space": "audit prompts, failure families, required audit packet fields",
+      "maintainer": "CDP runtime docs and future review processes"
+    },
+    "use_episode": {
+      "use": "Audit a CDP artifact before promotion, reuse, or transmission.",
+      "actor_context": "CDP runtime and production graph maintenance",
+      "inference_drawn": "A CDP artifact can be operationally routable while invalid in binding, scope, mode, or correction.",
+      "inference_type": "reflexive audit",
+      "non_inferences": [
+        "The audit adds a CDP primitive.",
+        "The audit authorizes production graph change.",
+        "The audit supplies domain warrant."
+      ]
+    },
+    "binding": {
+      "binding_target": "CDP artifacts as symbolic carrier-regimes",
+      "binding_basis": ["operational", "frame-relative", "normative/deontic"],
+      "binding_mechanism": ["runtime audit protocol", "review discipline"],
+      "claimed_mode": "reflexive governance only",
+      "operative_mode": "audit prompt and promotion guardrail"
+    },
+    "validity": {
+      "validity_criterion": "Audit preserves distinction between operational routability and valid claim binding.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "Artifact explicitly states no graph, kernel, formal, or domain warrant authorization.",
+      "confidence": "high for claim ceiling; medium for operational uptake",
+      "uncertainty": "How consistently it is applied before promotion is not shown here."
+    },
+    "scope": {
+      "scope_conditions": "Major CDP runtime protocols, admissions, comparison packets, formalization close records, and collection milestones.",
+      "scope_status": "preserved",
+      "scope_preserved": ["claim ceiling", "artifact classes", "audit prompts"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": ["production graph admission", "domain warrant", "formal claim"]
+    },
+    "recognition_authority": {
+      "recognizers": ["CDP operator", "review consumer", "promoter", "cold reviewer"],
+      "recognizer_standing": "Standing depends on CDP role and promotion gate, not merely audit completion.",
+      "authority_source": "CDP runtime governance and operator authorization.",
+      "uptake_path": "audit packet -> review/promotion gate -> refusal or admission path",
+      "recognition_relation": ["audit", "block", "promote", "refuse"],
+      "response_eligibility": ["flag failure", "block promotion", "require correction"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use audit result to affect CDP promotion or reuse.",
+      "action_policy": "CDP runtime/reflexive audit discipline.",
+      "licensed_consequence": "Block, defer, or condition promotion; not admit graph material by itself.",
+      "license_basis": "Audit claim ceiling, recognizer standing, and promotion-gate policy.",
+      "consequence_status": "licensed_with_restriction",
+      "blocked_consequences": ["kernel change", "production graph change", "formal claim authorization"]
+    },
+    "transmission": {
+      "transmission_path": "runtime audit doc -> audit packet -> gate decision",
+      "metadata_preserved": ["no-production-change ceiling", "failure families", "required audit fields"],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": ["FSST project-object audit vocabulary"],
+      "downstream_links": ["CDP promotion gate", "review consumer", "future audits"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": []
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "reflexive governance only",
+      "next_check": "Require audit packet presence in actual promotion workflows."
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["promotion_gate_link", "audit_packet_status"],
+      "notes": "This is the clearest example requiring persistent system, use, standing, and consequence policy together."
+    }
+  },
+  {
+    "record_id": "CDP-GATE-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Production Graph Admission Gate v0.1",
+      "path": "<workspace>/constraint-derivation-program/docs/runtime/production_graph_admission_gate_v0.1.md",
+      "artifact_type": "admission_gate",
+      "source_status": "canonical"
+    },
+    "symbolic_system": {
+      "system_name": "CDP production graph admission gate",
+      "system_type": "deterministic promotion gate",
+      "boundary": "Boundary between runtime-ratified artifacts and canonical production graph admission."
+    },
+    "carrier": {
+      "carrier_kind": "admission gate protocol text",
+      "carrier_state": "conditions for graph admission/refusal with required inputs and outputs",
+      "carrier_state_space": "required inputs, gate conditions, outputs, scope, future work",
+      "maintainer": "CDP runtime docs and promoter implementation"
+    },
+    "use_episode": {
+      "use": "Evaluate whether a runtime-ratified graph candidate may enter the production graph.",
+      "actor_context": "CDP promoter / operator-authorized admission workflow",
+      "inference_drawn": "A candidate passing all conditions may be admitted; a failing candidate must receive a refusal record.",
+      "inference_type": "production admission",
+      "non_inferences": [
+        "Runtime ratification alone admits production graph material.",
+        "Operator preference can weaken a failed gate.",
+        "A clean schema shape licenses confidence upgrade."
+      ]
+    },
+    "binding": {
+      "binding_target": "canonical production graph admission authority",
+      "binding_basis": ["operational", "codebook/conformance", "normative/deontic"],
+      "binding_mechanism": ["deterministic gate", "operator instruction", "schema validation"],
+      "claimed_mode": "active reference implementation",
+      "operative_mode": "promotion gate rule surface"
+    },
+    "validity": {
+      "validity_criterion": "All listed gate conditions pass and runtime review ceiling is preserved.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "Gate conditions explicitly specify inputs, refusal behavior, confidence ceiling, provenance, and open flags.",
+      "confidence": "high for rule clarity; unassessed for implementation completeness",
+      "uncertainty": "Promoter behavior and all linked artifacts are not validated in this record."
+    },
+    "scope": {
+      "scope_conditions": "One runtime-ratified graph candidate at a time with explicit operator instruction envelope.",
+      "scope_status": "narrowed",
+      "scope_preserved": ["single candidate", "operator instruction", "confidence ceiling", "refusal path"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": ["broad graph migration", "certainty upgrade", "adjacent candidate admission"]
+    },
+    "recognition_authority": {
+      "recognizers": ["promoter", "operator", "schema validator", "review consumer"],
+      "recognizer_standing": "Standing is distributed: schema validates shape, review consumer ratifies runtime status, operator authorizes specific admission, promoter executes.",
+      "authority_source": "CDP gate protocol plus operator instruction reference.",
+      "uptake_path": "candidate artifacts -> deterministic checks -> admission/refusal output",
+      "recognition_relation": ["validate", "authorize", "promote", "refuse"],
+      "response_eligibility": ["admit production edge", "write refusal", "preserve witness"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Admit candidate to canonical production graph.",
+      "action_policy": "Production gate conditions.",
+      "licensed_consequence": "Admission only if every gate condition passes; refusal otherwise.",
+      "license_basis": "Valid inputs, standing recognizers, explicit operator instruction, schema pass, review ceiling preservation.",
+      "consequence_status": "licensed_with_restriction",
+      "blocked_consequences": ["weakened gate", "confidence upgrade", "promotion without source packet"]
+    },
+    "transmission": {
+      "transmission_path": "runtime ratification -> production gate -> admitted graph edge or refusal record",
+      "metadata_preserved": ["provenance", "scope", "weakest premise", "violation signature", "lifecycle transition", "action token"],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": ["runtime admitted artifact", "review decision", "source packet", "edge candidate", "operator instruction"],
+      "downstream_links": ["admitted graph edge", "admission record", "refusal record"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": []
+    },
+    "verdict": {
+      "verdict": "licensed_with_restriction",
+      "claim_ceiling": "production admission gate",
+      "next_check": "Compiler schema should represent distributed standing and all-or-refuse action policy."
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["distributed_standing", "all_or_refuse_policy", "operator_instruction_reference"],
+      "notes": "This artifact forces the full chain and shows multiple recognizers with distinct standing roles."
+    }
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "record_id": "FSST-DRAFT-SCAFFOLD-001",
+  "record_version": "fsst_compiler_record_v0.1",
+  "source": {
+    "repo": "formal-symbolic-systems-theory",
+    "artifact": "Compiler Record Refusal Fixtures v0.1",
+    "path": "<workspace>/formal-symbolic-systems-theory/docs/formation/24_compiler_record_refusal_fixtures_v0.1.md",
+    "artifact_type": "normal_form",
+    "source_status": "draft"
+  },
+  "symbolic_system": {
+    "system_name": "FSST compiler record refusal fixtures",
+    "system_type": "TODO: classify the symbolic system",
+    "boundary": "TODO: state what is inside vs outside the system"
+  },
+  "carrier": {
+    "carrier_kind": "TODO: name the carrier kind",
+    "carrier_state": "TODO: describe the current carrier state",
+    "carrier_state_space": "TODO: describe the distinctions the carrier can bear",
+    "maintainer": "TODO: name what maintains the carrier"
+  },
+  "use_episode": {
+    "use": "TODO: describe the use episode",
+    "actor_context": "TODO: state who/what is using it and under what context",
+    "inference_drawn": "TODO: state the inference actually drawn",
+    "inference_type": "TODO: classify the inference type",
+    "non_inferences": [
+      "TODO: name at least one inference this record does not license"
+    ]
+  },
+  "binding": {
+    "binding_target": "TODO: state what the carrier binds to",
+    "binding_basis": [
+      "TODO: referential / operational / codebook / frame-relative / normative / indexical"
+    ],
+    "binding_mechanism": [
+      "TODO: institutional / causal / conventional / computational / ecological"
+    ],
+    "claimed_mode": "TODO: state the source/domain claimed mode",
+    "operative_mode": "TODO: state the observed operative mode"
+  },
+  "validity": {
+    "validity_criterion": "TODO: state the mode-specific validity criterion",
+    "validity_status": "unassessed",
+    "validity_evidence": "TODO: cite evidence for validity status",
+    "confidence": "TODO: bound confidence",
+    "uncertainty": "TODO: state remaining uncertainty"
+  },
+  "scope": {
+    "scope_conditions": "TODO: state valid scope conditions",
+    "scope_status": "unknown",
+    "scope_preserved": [
+      "TODO: name preserved scope metadata"
+    ],
+    "scope_lost": [
+      "TODO: name lost scope metadata, or say none"
+    ],
+    "prohibited_scope_extensions": [
+      "TODO: name at least one prohibited extension"
+    ]
+  },
+  "recognition_authority": {
+    "recognizers": [
+      "TODO: name recognizer"
+    ],
+    "recognizer_standing": "TODO: state recognizer standing",
+    "authority_source": "TODO: state authority source",
+    "uptake_path": "TODO: state uptake path",
+    "distributed_standing": [
+      {
+        "recognizer": "TODO: name standing-bearing recognizer",
+        "standing_scope": "TODO: state what this recognizer has standing to do",
+        "standing_basis": "TODO: state basis for that standing"
+      }
+    ],
+    "recognition_relation": [
+      "TODO: decode / execute / comply / apply / enforce"
+    ],
+    "response_eligibility": [
+      "TODO: name eligible responses"
+    ]
+  },
+  "policy_license": {
+    "attempted_consequence": "TODO: state attempted consequence",
+    "action_policy": "TODO: state policy controlling the consequence",
+    "licensed_consequence": "TODO: state what is actually licensed",
+    "license_basis": "TODO: state basis for license",
+    "consequence_status": "unknown",
+    "all_or_refuse_policy": false,
+    "blocked_consequences": [
+      "TODO: name at least one blocked consequence"
+    ]
+  },
+  "transmission": {
+    "transmission_path": "TODO: state transmission path",
+    "metadata_preserved": [
+      "TODO: name preserved metadata"
+    ],
+    "metadata_lost": [
+      "TODO: name lost metadata, or say none"
+    ]
+  },
+  "chain": {
+    "upstream_links": [
+      "TODO: name upstream link"
+    ],
+    "downstream_links": [
+      "TODO: name downstream link"
+    ],
+    "chain_license_status": "unknown",
+    "unlicensed_links": [
+      "TODO: name unlicensed link, or say none"
+    ]
+  },
+  "verdict": {
+    "verdict": "draft_scaffold",
+    "claim_ceiling": "draft scaffold only",
+    "next_check": "TODO: state the next check required before use"
+  },
+  "validation": {
+    "record_validation_status": "not_validated",
+    "validated_by": "not yet validated",
+    "validated_at": "2026-05-07",
+    "schema_version": "fsst_compiler_record_v0.2"
+  },
+  "review": {
+    "cold_review_status": "pending",
+    "promotion_authority": "TODO: state who can promote this record, if anyone",
+    "operator_instruction_reference": "Milestone 1F helper smoke test"
+  },
+  "reflexive_pressure": {
+    "self_application": false,
+    "composition_pressure": "weak",
+    "new_field_pressure": [],
+    "notes": "Draft scaffold. TODO markers must be resolved before relying on this record."
+  }
+}

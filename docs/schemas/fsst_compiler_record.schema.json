@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-symbolic-systems-theory.local/schemas/fsst_compiler_record.schema.json",
+  "title": "FSST Compact Compiler Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "record_version",
+    "source",
+    "symbolic_system",
+    "carrier",
+    "use_episode",
+    "binding",
+    "validity",
+    "scope",
+    "recognition_authority",
+    "policy_license",
+    "transmission",
+    "chain",
+    "verdict",
+    "reflexive_pressure"
+  ],
+  "properties": {
+    "record_id": { "type": "string", "minLength": 1 },
+    "record_version": { "type": "string", "const": "fsst_compiler_record_v0.1" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "artifact", "path", "artifact_type", "source_status"],
+      "properties": {
+        "repo": { "type": "string" },
+        "artifact": { "type": "string" },
+        "path": { "type": "string" },
+        "artifact_type": {
+          "type": "string",
+          "enum": [
+            "governance_doc",
+            "runtime_packet",
+            "formalization_target",
+            "normal_form",
+            "reflexive_audit",
+            "admission_gate",
+            "grounding_doc",
+            "roadmap_or_state"
+          ]
+        },
+        "source_status": {
+          "type": "string",
+          "enum": ["canonical", "active_candidate", "runtime_design_candidate", "checked_slice", "draft", "unknown"]
+        }
+      }
+    },
+    "symbolic_system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system_name", "system_type", "boundary"],
+      "properties": {
+        "system_name": { "type": "string" },
+        "system_type": { "type": "string" },
+        "boundary": { "type": "string" }
+      }
+    },
+    "carrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["carrier_kind", "carrier_state", "carrier_state_space", "maintainer"],
+      "properties": {
+        "carrier_kind": { "type": "string" },
+        "carrier_state": { "type": "string" },
+        "carrier_state_space": { "type": "string" },
+        "maintainer": { "type": "string" }
+      }
+    },
+    "use_episode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["use", "actor_context", "inference_drawn", "inference_type", "non_inferences"],
+      "properties": {
+        "use": { "type": "string" },
+        "actor_context": { "type": "string" },
+        "inference_drawn": { "type": "string" },
+        "inference_type": { "type": "string" },
+        "non_inferences": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["binding_target", "binding_basis", "binding_mechanism", "claimed_mode", "operative_mode"],
+      "properties": {
+        "binding_target": { "type": "string" },
+        "binding_basis": { "type": "array", "items": { "type": "string" } },
+        "binding_mechanism": { "type": "array", "items": { "type": "string" } },
+        "claimed_mode": { "type": "string" },
+        "operative_mode": { "type": "string" }
+      }
+    },
+    "validity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["validity_criterion", "validity_status", "validity_evidence", "confidence", "uncertainty"],
+      "properties": {
+        "validity_criterion": { "type": "string" },
+        "validity_status": {
+          "type": "string",
+          "enum": ["valid", "partially_valid", "invalid", "unassessed", "contested", "unknown"]
+        },
+        "validity_evidence": { "type": "string" },
+        "confidence": { "type": "string" },
+        "uncertainty": { "type": "string" }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope_conditions", "scope_status", "scope_preserved", "scope_lost", "prohibited_scope_extensions"],
+      "properties": {
+        "scope_conditions": { "type": "string" },
+        "scope_status": {
+          "type": "string",
+          "enum": ["preserved", "narrowed", "expanded_with_warrant", "expanded_without_warrant", "stripped", "ambiguous", "contested", "unknown"]
+        },
+        "scope_preserved": { "type": "array", "items": { "type": "string" } },
+        "scope_lost": { "type": "array", "items": { "type": "string" } },
+        "prohibited_scope_extensions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "recognition_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recognizers", "recognizer_standing", "authority_source", "uptake_path", "recognition_relation", "response_eligibility"],
+      "properties": {
+        "recognizers": { "type": "array", "items": { "type": "string" } },
+        "recognizer_standing": { "type": "string" },
+        "authority_source": { "type": "string" },
+        "uptake_path": { "type": "string" },
+        "standing_resolution_state": {
+          "type": "string",
+          "enum": ["resolved", "partially_resolved", "unresolved", "contested", "not_applicable"]
+        },
+        "standing_resolution_basis": { "type": "string" },
+        "standing_open_questions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "distributed_standing": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["recognizer", "standing_scope", "standing_basis"],
+            "properties": {
+              "recognizer": { "type": "string" },
+              "standing_scope": { "type": "string" },
+              "standing_basis": { "type": "string" },
+              "standing_resolution_state": {
+                "type": "string",
+                "enum": ["established", "restricted", "unresolved", "contested", "out_of_scope"]
+              },
+              "standing_resolution_basis": { "type": "string" },
+              "standing_resolution_blockers": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "licensed_consequences": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "blocked_consequences": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "recognition_relation": { "type": "array", "items": { "type": "string" } },
+        "response_eligibility": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "policy_license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["attempted_consequence", "action_policy", "licensed_consequence", "license_basis", "consequence_status", "blocked_consequences"],
+      "properties": {
+        "attempted_consequence": { "type": "string" },
+        "action_policy": { "type": "string" },
+        "licensed_consequence": { "type": "string" },
+        "license_basis": { "type": "string" },
+        "consequence_status": {
+          "type": "string",
+          "enum": ["licensed", "licensed_with_restriction", "unlicensed", "blocked", "deferred", "unknown"]
+        },
+        "all_or_refuse_policy": { "type": "boolean" },
+        "blocked_consequences": { "type": "array", "items": { "type": "string" } },
+        "consequence_routes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["consequence", "route_status", "recognizer_chain", "route_basis"],
+            "properties": {
+              "consequence": { "type": "string" },
+              "route_status": {
+                "type": "string",
+                "enum": ["licensed", "licensed_with_restriction", "blocked", "deferred", "unlicensed"]
+              },
+              "recognizer_chain": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "route_basis": { "type": "string" },
+              "blocked_by": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "transmission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transmission_path", "metadata_preserved", "metadata_lost"],
+      "properties": {
+        "transmission_path": { "type": "string" },
+        "metadata_preserved": { "type": "array", "items": { "type": "string" } },
+        "metadata_lost": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "chain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["upstream_links", "downstream_links", "chain_license_status", "unlicensed_links"],
+      "properties": {
+        "upstream_links": { "type": "array", "items": { "type": "string" } },
+        "downstream_links": { "type": "array", "items": { "type": "string" } },
+        "chain_license_status": {
+          "type": "string",
+          "enum": ["all_links_licensed", "some_links_unlicensed", "unknown", "not_applicable"]
+        },
+        "unlicensed_links": { "type": "array", "items": { "type": "string" } }
+        ,
+        "cross_record_routes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "upstream_record_id",
+              "upstream_consequence",
+              "downstream_record_id",
+              "downstream_use",
+              "route_status",
+              "metadata_required",
+              "metadata_preserved",
+              "metadata_lost",
+              "composition_basis"
+            ],
+            "properties": {
+              "upstream_record_id": { "type": "string" },
+              "upstream_consequence": { "type": "string" },
+              "downstream_record_id": { "type": "string" },
+              "downstream_use": { "type": "string" },
+              "route_status": {
+                "type": "string",
+                "enum": ["licensed", "licensed_with_restriction", "blocked", "deferred", "unlicensed"]
+              },
+              "metadata_required": { "type": "array", "items": { "type": "string" } },
+              "metadata_preserved": { "type": "array", "items": { "type": "string" } },
+              "metadata_lost": { "type": "array", "items": { "type": "string" } },
+              "composition_basis": { "type": "string" },
+              "blocked_by": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "verdict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verdict", "claim_ceiling", "next_check"],
+      "properties": {
+        "verdict": { "type": "string" },
+        "claim_ceiling": { "type": "string" },
+        "next_check": { "type": "string" }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_validation_status", "validated_by", "validated_at", "schema_version"],
+      "properties": {
+        "record_validation_status": {
+          "type": "string",
+          "enum": ["not_validated", "passed", "failed", "warnings"]
+        },
+        "validated_by": { "type": "string" },
+        "validated_at": { "type": "string" },
+        "schema_version": { "type": "string" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cold_review_status", "promotion_authority", "operator_instruction_reference"],
+      "properties": {
+        "cold_review_status": {
+          "type": "string",
+          "enum": ["not_required", "absent", "pending", "passed", "failed", "waived"]
+        },
+        "promotion_authority": { "type": "string" },
+        "operator_instruction_reference": { "type": "string" }
+      }
+    },
+    "reflexive_pressure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["self_application", "composition_pressure", "new_field_pressure", "notes"],
+      "properties": {
+        "self_application": { "type": "boolean" },
+        "composition_pressure": {
+          "type": "string",
+          "enum": ["none", "weak", "moderate", "strong"]
+        },
+        "new_field_pressure": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

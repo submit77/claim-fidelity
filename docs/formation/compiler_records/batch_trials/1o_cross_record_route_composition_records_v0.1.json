@@ -1,0 +1,308 @@
+[
+  {
+    "record_id": "1O-RAE-TO-CDP-PROTOCOL-ROUTE-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "reality-alignment-engine",
+      "artifact": "Pilot 002 to CDP protocol-drafting route",
+      "path": "<workspace>/reality-alignment-engine/docs/examples/pilot_002_coupling_documentation_protocol_decision.md",
+      "artifact_type": "runtime_packet",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "RAE-to-CDP protocol drafting route",
+      "system_type": "cross-record route composition",
+      "boundary": "Only the protocol-writing consequence from the upstream RAE packet is routed into downstream CDP drafting."
+    },
+    "carrier": {
+      "carrier_kind": "compiler record composition",
+      "carrier_state": "upstream licensed consequence mapped to downstream use with required metadata",
+      "carrier_state_space": "record ids, consequences, downstream uses, preserved metadata, lost metadata, route status",
+      "maintainer": "FSST compiler-record batch"
+    },
+    "use_episode": {
+      "use": "Use an upstream RAE licensed consequence as the downstream CDP protocol-writing input.",
+      "actor_context": "RAE packet output feeding CDP protocol drafting",
+      "inference_drawn": "The drafting input is licensed only while no-collection, no-threshold, CDP-hosting, and review metadata are preserved.",
+      "inference_type": "cross-record route license",
+      "non_inferences": [
+        "The RAE packet authorizes collection.",
+        "The RAE packet authorizes CDP promotion.",
+        "The downstream CDP protocol is accepted before CDP review."
+      ]
+    },
+    "binding": {
+      "binding_target": "upstream consequence to downstream use transition",
+      "binding_basis": ["operational", "normative/deontic", "frame-relative"],
+      "binding_mechanism": ["compiler-record chain", "repository-maintained"],
+      "claimed_mode": "cross-record route composition",
+      "operative_mode": "metadata-preserving route gate"
+    },
+    "validity": {
+      "validity_criterion": "The downstream use must consume only the upstream licensed consequence and preserve required scope, standing, confidence, and blocked-consequence metadata.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The route preserves protocol-writing-only scope and blocks collection/promotion consequences.",
+      "confidence": "medium-high for local project routing",
+      "uncertainty": "Future CDP review and acceptance remain downstream conditions."
+    },
+    "scope": {
+      "scope_conditions": "RAE Pilot 002 may route protocol-writing direction into CDP drafting only.",
+      "scope_status": "preserved",
+      "scope_preserved": ["protocol-writing only", "no collection", "no thresholds", "CDP hosting required", "future review required"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": ["data collection", "risk/security claim", "threshold claim", "production promotion"]
+    },
+    "recognition_authority": {
+      "recognizers": ["RAE packet author", "operator", "CDP maintainer"],
+      "recognizer_standing": "RAE and operator standing route drafting only; CDP standing is required for future acceptance.",
+      "authority_source": "RAE packet discipline, operator direction, and CDP repo governance.",
+      "uptake_path": "RAE packet -> operator direction -> CDP protocol draft -> CDP review",
+      "standing_resolution_state": "partially_resolved",
+      "standing_resolution_basis": "Established standing exists for drafting route; CDP acceptance remains restricted/future.",
+      "standing_open_questions": ["Will CDP accept or revise the completed protocol?"],
+      "distributed_standing": [
+        {
+          "recognizer": "RAE packet author",
+          "standing_scope": "frame and license bounded protocol-writing direction",
+          "standing_basis": "RAE situation packet",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for packet framing.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": ["route protocol-writing consequence to downstream CDP drafting"],
+          "blocked_consequences": ["authorize collection"]
+        },
+        {
+          "recognizer": "operator",
+          "standing_scope": "authorize local drafting action",
+          "standing_basis": "project owner direction",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for local action direction.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": ["route protocol-writing consequence to downstream CDP drafting"],
+          "blocked_consequences": ["override CDP acceptance"]
+        },
+        {
+          "recognizer": "CDP maintainer",
+          "standing_scope": "accept, revise, or reject completed protocol",
+          "standing_basis": "CDP repo governance",
+          "standing_resolution_state": "restricted",
+          "standing_resolution_basis": "Restricted to future artifact acceptance.",
+          "standing_resolution_blockers": ["completed protocol not yet accepted"],
+          "licensed_consequences": ["accept, revise, or reject completed protocol"],
+          "blocked_consequences": ["authorize collection from RAE packet alone"]
+        }
+      ],
+      "recognition_relation": ["frame", "authorize", "accept"],
+      "response_eligibility": ["draft", "block collection", "defer acceptance"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Route protocol-writing output into downstream drafting.",
+      "action_policy": "Only consequences licensed by upstream record and covered by downstream standing may route.",
+      "licensed_consequence": "route protocol-writing consequence to downstream CDP drafting",
+      "license_basis": "Upstream route license plus preserved metadata.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": ["authorize collection", "claim protocol adequacy", "promote to production"],
+      "consequence_routes": [
+        {
+          "consequence": "route protocol-writing consequence to downstream CDP drafting",
+          "route_status": "licensed",
+          "recognizer_chain": ["RAE packet author", "operator"],
+          "route_basis": "Both recognizers have established standing for the local drafting route."
+        }
+      ]
+    },
+    "transmission": {
+      "transmission_path": "RAE packet record -> cross-record route -> CDP protocol-drafting record",
+      "metadata_preserved": ["scope", "confidence", "standing", "blocked consequences"],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": ["RAE-PILOT002-PARTIAL-LICENSE-001"],
+      "downstream_links": ["future CDP protocol draft"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": [],
+      "cross_record_routes": [
+        {
+          "upstream_record_id": "RAE-PILOT002-PARTIAL-LICENSE-001",
+          "upstream_consequence": "draft CDP coupling-documentation collection protocol",
+          "downstream_record_id": "future-CDP-coupling-documentation-protocol",
+          "downstream_use": "draft protocol text",
+          "route_status": "licensed_with_restriction",
+          "metadata_required": ["scope", "confidence", "standing", "blocked consequences"],
+          "metadata_preserved": ["scope", "confidence", "standing", "blocked consequences"],
+          "metadata_lost": [],
+          "composition_basis": "The downstream use consumes only the upstream drafting consequence and preserves all required restrictions."
+        }
+      ]
+    },
+    "verdict": {
+      "verdict": "cross_record_route_pass",
+      "claim_ceiling": "licensed downstream drafting route with collection and promotion blocked",
+      "next_check": "Test whether this route can compose again into collection authorization without laundering metadata."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py --schema docs/schemas/fsst_compiler_record_v0.4.schema.json",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.4"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "CDP maintainer for protocol acceptance; no collection authority",
+      "operator_instruction_reference": "Milestone 1O cross-record route composition batch"
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["cross_record_routes", "metadata_required", "metadata_preserved", "metadata_lost"],
+      "notes": "Cross-record composition requires explicit metadata preservation, not just named upstream/downstream links."
+    }
+  },
+  {
+    "record_id": "1O-SOURCE-SELECTION-TO-PILOT-ROUTE-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Source-selection routing into future pilot design",
+      "path": "<workspace>/constraint-derivation-program/graph/quantification_pilots/vulnerability_prioritization_source_selection_sweep_v0.1.md",
+      "artifact_type": "runtime_packet",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "CDP source-selection to pilot-design route",
+      "system_type": "cross-record route composition",
+      "boundary": "Only source-fit routing can feed pilot design; collection and quantitative claims remain blocked."
+    },
+    "carrier": {
+      "carrier_kind": "compiler record composition",
+      "carrier_state": "source-selection consequence routed to pilot-design use with collection blocked",
+      "carrier_state_space": "source verdicts, downstream use, required metadata, route status",
+      "maintainer": "FSST compiler-record batch"
+    },
+    "use_episode": {
+      "use": "Use source-selection verdicts to select candidate sources for future pilot design.",
+      "actor_context": "CDP Workstream B pilot planning",
+      "inference_drawn": "Candidate/support/reject-as-primary routing may inform pilot design only while no-collection and no-quantitative-claim metadata survive.",
+      "inference_type": "cross-record source-route license",
+      "non_inferences": ["Collection is authorized.", "A quantitative bound is established.", "A source rejected as primary is low quality."]
+    },
+    "binding": {
+      "binding_target": "source-selection verdict to pilot-design input",
+      "binding_basis": ["operational", "codebook/conformance", "referential"],
+      "binding_mechanism": ["documented workflow", "repository-maintained"],
+      "claimed_mode": "source-selection composition",
+      "operative_mode": "pilot-design input gate"
+    },
+    "validity": {
+      "validity_criterion": "The downstream pilot design preserves source-fit scope, no-collection status, and source-native/protocol-fit standing separation.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The route keeps source selection distinct from collection authorization.",
+      "confidence": "medium for planning; no collection evidence",
+      "uncertainty": "Future pilot review must still authorize collection."
+    },
+    "scope": {
+      "scope_conditions": "Source-selection verdicts may route to pilot design only.",
+      "scope_status": "preserved",
+      "scope_preserved": ["source-fit routing", "no collection", "no quantitative bounds", "source-native authority separation"],
+      "scope_lost": [],
+      "prohibited_scope_extensions": ["collection", "thresholds", "risk/security claim", "source quality condemnation"]
+    },
+    "recognition_authority": {
+      "recognizers": ["CDP source-selection author", "future Workstream B pilot reviewer"],
+      "recognizer_standing": "CDP author standing covers source-fit routing; reviewer standing required for future collection.",
+      "authority_source": "CDP source-selection criteria and future pilot review.",
+      "uptake_path": "source-selection record -> future pilot design -> future review",
+      "standing_resolution_state": "partially_resolved",
+      "standing_resolution_basis": "Routing standing established; collection standing unresolved.",
+      "standing_open_questions": ["Which future reviewer authorizes collection?"],
+      "distributed_standing": [
+        {
+          "recognizer": "CDP source-selection author",
+          "standing_scope": "classify source fit for protocol design",
+          "standing_basis": "CDP source-selection criteria",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for source-fit routing.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": ["route source-selection verdict to pilot design"],
+          "blocked_consequences": ["authorize collection"]
+        },
+        {
+          "recognizer": "future Workstream B pilot reviewer",
+          "standing_scope": "authorize collection after protocol review",
+          "standing_basis": "future pilot review",
+          "standing_resolution_state": "unresolved",
+          "standing_resolution_basis": "No future review has occurred.",
+          "standing_resolution_blockers": ["future review absent"],
+          "licensed_consequences": [],
+          "blocked_consequences": ["authorize collection", "claim quantitative bounds"]
+        }
+      ],
+      "recognition_relation": ["route", "review", "block"],
+      "response_eligibility": ["design pilot", "defer collection"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Route source-selection verdict to future pilot design.",
+      "action_policy": "Planning may consume source-fit verdicts; collection requires separate review.",
+      "licensed_consequence": "route source-selection verdict to pilot design",
+      "license_basis": "Source-selection fit verdict with no-collection metadata preserved.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": ["authorize collection", "claim quantitative bounds"],
+      "consequence_routes": [
+        {
+          "consequence": "route source-selection verdict to pilot design",
+          "route_status": "licensed",
+          "recognizer_chain": ["CDP source-selection author"],
+          "route_basis": "Source-selection author has standing for fit routing."
+        }
+      ]
+    },
+    "transmission": {
+      "transmission_path": "source-selection record -> pilot-design record",
+      "metadata_preserved": ["scope", "confidence", "standing", "blocked consequences"],
+      "metadata_lost": []
+    },
+    "chain": {
+      "upstream_links": ["CDP-SOURCE-SELECTION-PARTIAL-LICENSE-001"],
+      "downstream_links": ["future Workstream B pilot design"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": [],
+      "cross_record_routes": [
+        {
+          "upstream_record_id": "CDP-SOURCE-SELECTION-PARTIAL-LICENSE-001",
+          "upstream_consequence": "candidate/support/reject-as-primary routing",
+          "downstream_record_id": "future-workstream-b-pilot-design",
+          "downstream_use": "choose candidate source inputs for pilot design",
+          "route_status": "licensed_with_restriction",
+          "metadata_required": ["scope", "confidence", "standing", "blocked consequences"],
+          "metadata_preserved": ["scope", "confidence", "standing", "blocked consequences"],
+          "metadata_lost": [],
+          "composition_basis": "The downstream design step consumes only source-fit routing, not collection authority."
+        }
+      ]
+    },
+    "verdict": {
+      "verdict": "cross_record_route_pass",
+      "claim_ceiling": "licensed pilot-design input route with collection blocked",
+      "next_check": "Require future collection record to re-establish reviewer standing."
+    },
+    "validation": {
+      "record_validation_status": "passed",
+      "validated_by": "scripts/validate_compiler_records.py --schema docs/schemas/fsst_compiler_record_v0.4.schema.json",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.4"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "future Workstream B reviewer for collection",
+      "operator_instruction_reference": "Milestone 1O cross-record route composition batch"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["cross_record_routes", "metadata_required", "metadata_preserved", "metadata_lost"],
+      "notes": "A source-selection result can route into planning only if no-collection metadata survives."
+    }
+  }
+]

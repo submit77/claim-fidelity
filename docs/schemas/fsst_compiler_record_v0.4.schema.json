@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-symbolic-systems-theory.local/schemas/fsst_compiler_record_v0.4.schema.json",
+  "title": "FSST Compact Compiler Record v0.4",
+  "allOf": [
+    { "$ref": "fsst_compiler_record_v0.3.schema.json" },
+    {
+      "type": "object",
+      "required": ["validation", "chain"],
+      "properties": {
+        "validation": {
+          "type": "object",
+          "required": ["schema_version"],
+          "properties": {
+            "schema_version": { "type": "string", "const": "fsst_compiler_record_v0.4" }
+          }
+        },
+        "chain": {
+          "type": "object",
+          "required": ["cross_record_routes"],
+          "properties": {
+            "cross_record_routes": {
+              "type": "array",
+              "minItems": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

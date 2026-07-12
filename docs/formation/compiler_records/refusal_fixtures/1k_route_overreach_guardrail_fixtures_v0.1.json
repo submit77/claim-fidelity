@@ -1,0 +1,513 @@
+[
+  {
+    "record_id": "RAE-PILOT002-ROUTE-OVERREACH-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "reality-alignment-engine",
+      "artifact": "Pilot 002 Coupling Documentation Protocol Decision",
+      "path": "<workspace>/reality-alignment-engine/docs/examples/pilot_002_coupling_documentation_protocol_decision.md",
+      "artifact_type": "runtime_packet",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "RAE Pilot 002 coupling protocol decision packet",
+      "system_type": "situation-alignment decision packet",
+      "boundary": "Bounded decision packet licensing protocol-writing direction, not collection, thresholds, risk claims, or production runtime authority."
+    },
+    "carrier": {
+      "carrier_kind": "situation alignment packet document",
+      "carrier_state": "pilot packet with actuality claims, P/R split, floors, symbolic-system audit, licensed actions, unlicensed actions, and capability delta",
+      "carrier_state_space": "claims, evidence references, floors, actions, blocked consequences, remainders, return capture",
+      "maintainer": "RAE examples docs and future runtime packet discipline"
+    },
+    "use_episode": {
+      "use": "Use Pilot 002 to license the next protocol-writing intervention for CDP Workstream B.",
+      "actor_context": "RAE build loop interacting with CDP protocol work",
+      "inference_drawn": "Drafting the coupling-documentation collection protocol is reachable and licensed; data collection and threshold claims are not.",
+      "inference_type": "bounded project-decision license",
+      "non_inferences": [
+        "RAE can host the CDP protocol artifact.",
+        "The packet authorizes data collection.",
+        "The packet proves coupling adequacy or vulnerability risk.",
+        "The packet transfers CDP promotion authority to RAE."
+      ]
+    },
+    "binding": {
+      "binding_target": "next bounded protocol-writing intervention and its non-claims",
+      "binding_basis": [
+        "operational",
+        "normative/deontic",
+        "frame-relative"
+      ],
+      "binding_mechanism": [
+        "repository-maintained",
+        "conventional",
+        "institutional"
+      ],
+      "claimed_mode": "situation-alignment packet",
+      "operative_mode": "bounded project-sequencing record"
+    },
+    "validity": {
+      "validity_criterion": "The packet preserves source evidence, blocked consequences, reachable actions, and repo authority boundaries.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The packet explicitly distinguishes drafting protocol from collection, thresholds, comparison, and risk/security claims.",
+      "confidence": "medium-high for local project sequencing",
+      "uncertainty": "Standing is unresolved for how RAE recommendation interacts with CDP hosting and future reviewer contestation."
+    },
+    "scope": {
+      "scope_conditions": "Local project decision to draft a CDP coupling-documentation protocol before collection or schema work.",
+      "scope_status": "ambiguous",
+      "scope_preserved": [
+        "no collection",
+        "no thresholds",
+        "CDP hosting requirement",
+        "protocol-writing only"
+      ],
+      "scope_lost": [
+        "future cold review status",
+        "actual CDP maintainer acceptance at later time"
+      ],
+      "prohibited_scope_extensions": [
+        "data collection",
+        "risk/security claim",
+        "threshold or comparison",
+        "CDP production promotion"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": [
+        "RAE packet author",
+        "operator",
+        "CDP maintainer",
+        "future cold reviewer"
+      ],
+      "recognizer_standing": "Open standing question: RAE can recommend and the operator can direct a build step, but CDP must host the protocol and future reviewers may contest its adequacy.",
+      "authority_source": "RAE packet discipline, operator direction, CDP runtime protocol authority, and future cold review.",
+      "uptake_path": "RAE packet -> operator direction -> CDP protocol draft -> future review",
+      "distributed_standing": [
+        {
+          "recognizer": "RAE packet author",
+          "standing_scope": "frame the decision and recommend protocol-writing direction",
+          "standing_basis": "RAE situation-packet discipline",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for framing the situation packet and recommending a bounded next action.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": [
+            "draft CDP coupling-documentation collection protocol"
+          ],
+          "blocked_consequences": [
+            "host CDP protocol",
+            "authorize collection"
+          ]
+        },
+        {
+          "recognizer": "operator",
+          "standing_scope": "authorize immediate build direction",
+          "standing_basis": "project owner/operator authority",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for immediate project direction inside the current work loop.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": [
+            "draft CDP coupling-documentation collection protocol"
+          ],
+          "blocked_consequences": [
+            "override CDP acceptance or future review"
+          ]
+        },
+        {
+          "recognizer": "CDP maintainer",
+          "standing_scope": "accept, revise, or reject protocol artifact in CDP",
+          "standing_basis": "CDP repo and Workstream B governance",
+          "standing_resolution_state": "restricted",
+          "standing_resolution_basis": "Restricted to future acceptance/revision decision after the artifact exists; not required for the local drafting route.",
+          "standing_resolution_blockers": [
+            "CDP acceptance has not yet occurred"
+          ],
+          "licensed_consequences": [
+            "accept, revise, or reject completed CDP protocol artifact"
+          ],
+          "blocked_consequences": [
+            "draft CDP coupling-documentation collection protocol",
+            "authorize data collection",
+            "production promotion"
+          ]
+        },
+        {
+          "recognizer": "future cold reviewer",
+          "standing_scope": "contest adequacy before collection or promotion",
+          "standing_basis": "review discipline not yet exercised",
+          "standing_resolution_state": "unresolved",
+          "standing_resolution_basis": "Review standing is not exercised until the future review event occurs.",
+          "standing_resolution_blockers": [
+            "future review has not yet occurred"
+          ],
+          "licensed_consequences": [],
+          "blocked_consequences": [
+            "authorize data collection",
+            "production promotion",
+            "treat adequacy as reviewed"
+          ]
+        }
+      ],
+      "recognition_relation": [
+        "frame",
+        "authorize",
+        "host",
+        "contest"
+      ],
+      "response_eligibility": [
+        "draft protocol",
+        "block collection",
+        "require review",
+        "defer promotion"
+      ],
+      "standing_resolution_state": "partially_resolved",
+      "standing_resolution_basis": "Some recognizers have established standing for narrow consequence, while future or external recognizers remain unresolved or contested for stronger consequence.",
+      "standing_open_questions": [
+        "Will CDP accept or host the protocol artifact?",
+        "Will future review find the protocol adequate before collection or promotion?"
+      ]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use Pilot 002 to guide the next build action.",
+      "action_policy": "Situation packet licensed actions and unlicensed actions.",
+      "licensed_consequence": "draft CDP coupling-documentation collection protocol",
+      "license_basis": "Packet source evidence, blocked consequences, and operator direction.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "data collection without pilot authorization",
+        "metric-target alignment substituted for coupling documentation",
+        "risk/security/quality claim",
+        "CDP production promotion"
+      ],
+      "consequence_routes": [
+        {
+          "consequence": "draft CDP coupling-documentation collection protocol",
+          "route_status": "licensed",
+          "recognizer_chain": [
+            "RAE packet author",
+            "future cold reviewer"
+          ],
+          "route_basis": "Intentional bad fixture: tries to route drafting license through unresolved future review."
+        },
+        {
+          "consequence": "authorize data collection",
+          "route_status": "blocked",
+          "recognizer_chain": [
+            "CDP maintainer",
+            "future cold reviewer"
+          ],
+          "route_basis": "Collection requires CDP acceptance and later review, neither of which is established by the packet.",
+          "blocked_by": [
+            "CDP maintainer",
+            "future cold reviewer"
+          ]
+        }
+      ]
+    },
+    "transmission": {
+      "transmission_path": "RAE pilot packet -> CDP protocol drafting -> future review",
+      "metadata_preserved": [
+        "licensed action",
+        "blocked consequences",
+        "CDP hosting requirement"
+      ],
+      "metadata_lost": [
+        "future reviewer decision"
+      ]
+    },
+    "chain": {
+      "upstream_links": [
+        "CDP scout",
+        "CDP admitted edge",
+        "metric-target protocol",
+        "RAE interface cards"
+      ],
+      "downstream_links": [
+        "CDP coupling-documentation protocol",
+        "future collection pilot"
+      ],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": [
+        "collection, thresholds, and production promotion remain unlicensed"
+      ]
+    },
+    "verdict": {
+      "verdict": "route_overreach_warning_fixture",
+      "claim_ceiling": "licensed protocol-writing route with collection and promotion blocked",
+      "next_check": "Represent RAE recommendation, operator direction, CDP hosting, and cold review as distinct standing states."
+    },
+    "validation": {
+      "record_validation_status": "warnings",
+      "validated_by": "scripts/validate_compiler_records.py --schema docs/schemas/fsst_compiler_record_v0.3.schema.json",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.3"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "CDP maintainers/reviewers for protocol acceptance; RAE for packet framing only",
+      "operator_instruction_reference": "Milestone 1K partial standing and restricted license batch"
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": [
+        "standing_question_status",
+        "standing_resolution_route",
+        "host_repo_acceptance_status",
+        "per_recognizer_standing_resolution_state",
+        "consequence_routes",
+        "partial_standing_license"
+      ],
+      "notes": "The current schema can preserve the issue in prose but lacks a structured open-standing state."
+    }
+  },
+  {
+    "record_id": "CDP-SOURCE-SELECTION-ROUTE-OVERREACH-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "constraint-derivation-program",
+      "artifact": "Vulnerability Prioritization Source-Selection Sweep v0.1",
+      "path": "<workspace>/constraint-derivation-program/graph/quantification_pilots/vulnerability_prioritization_source_selection_sweep_v0.1.md",
+      "artifact_type": "runtime_packet",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "CDP vulnerability prioritization source-selection sweep",
+      "system_type": "Workstream B source-selection artifact",
+      "boundary": "Sweep selecting or rejecting public source surfaces for later bounded Workstream B pilots without collecting data or claiming quantitative bounds."
+    },
+    "carrier": {
+      "carrier_kind": "source-selection markdown packet",
+      "carrier_state": "sweep with source criteria, candidate source results, fit verdicts, source details, and explicit non-claims",
+      "carrier_state_space": "candidate source rows, source types, denominator exposure, fit verdicts, limits, non-claim flags",
+      "maintainer": "CDP quantification pilots and Workstream B docs"
+    },
+    "use_episode": {
+      "use": "Use the sweep to decide which public source surfaces are candidates for later collection pilots.",
+      "actor_context": "CDP Workstream B vulnerability-prioritization quantification planning",
+      "inference_drawn": "A source may be candidate, supporting, or rejected as primary denominator for this protocol without judging its general authority or quality.",
+      "inference_type": "source-selection routing",
+      "non_inferences": [
+        "A candidate source authorizes collection.",
+        "A rejected primary denominator is a bad or unauthoritative source.",
+        "The sweep claims thresholds, security risk, quantitative bounds, or production graph change."
+      ]
+    },
+    "binding": {
+      "binding_target": "fit between public source surfaces and Workstream B denominator/scope requirements",
+      "binding_basis": [
+        "operational",
+        "codebook/conformance",
+        "referential"
+      ],
+      "binding_mechanism": [
+        "documented workflow",
+        "repository-maintained"
+      ],
+      "claimed_mode": "source-selection sweep",
+      "operative_mode": "candidate-source routing artifact"
+    },
+    "validity": {
+      "validity_criterion": "The sweep preserves no-collection, no-threshold, no-security/risk, no-comparison, and no-production-change ceilings while classifying source fit.",
+      "validity_status": "partially_valid",
+      "validity_evidence": "The header explicitly states collection_authorized false, quantitative_bound_claimed false, threshold_claimed false, security_or_risk_claimed false, comparison_authorized false, and production_graph_change false.",
+      "confidence": "medium-high for local source-selection routing; no collection pilot evidence",
+      "uncertainty": "Standing is open for whether authoritative public sources rejected as primary denominators may still support later paired-source designs."
+    },
+    "scope": {
+      "scope_conditions": "Source-selection for two vulnerability-prioritization Workstream B protocols before data collection.",
+      "scope_status": "narrowed",
+      "scope_preserved": [
+        "source-selection-only ceiling",
+        "candidate/support/reject verdicts",
+        "denominator requirement",
+        "non-claims"
+      ],
+      "scope_lost": [
+        "future collection pilot outcome",
+        "source commit/version for some surfaces"
+      ],
+      "prohibited_scope_extensions": [
+        "data collection",
+        "quantitative bounds",
+        "thresholds",
+        "security or risk claim",
+        "comparison",
+        "production graph change"
+      ]
+    },
+    "recognition_authority": {
+      "recognizers": [
+        "CDP source-selection author",
+        "public source authority",
+        "future Workstream B pilot reviewer"
+      ],
+      "recognizer_standing": "Open standing question: public sources may be authoritative in their own domain, while CDP has standing only to judge fit for this protocol's denominator and non-claim requirements.",
+      "authority_source": "CDP Workstream B protocol requirements and public source documentation.",
+      "uptake_path": "public source surface -> CDP source-selection verdict -> future pilot design or rejection",
+      "distributed_standing": [
+        {
+          "recognizer": "public source authority",
+          "standing_scope": "maintain the source's own methodology, documentation, or data surface",
+          "standing_basis": "source-native authority",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for maintaining the source's own data surface, documentation, or methodology.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": [
+            "source-native methodological authority"
+          ],
+          "blocked_consequences": [
+            "CDP protocol-fit authority",
+            "collection authorization"
+          ]
+        },
+        {
+          "recognizer": "CDP source-selection author",
+          "standing_scope": "classify source fit for a specific Workstream B protocol",
+          "standing_basis": "CDP source-selection sweep criteria",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for classifying fit against this Workstream B protocol's source-selection criteria.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": [
+            "candidate/support/reject-as-primary routing"
+          ],
+          "blocked_consequences": [
+            "source quality condemnation",
+            "collection authorization"
+          ]
+        },
+        {
+          "recognizer": "future Workstream B pilot reviewer",
+          "standing_scope": "authorize collection only after pilot protocol and review",
+          "standing_basis": "future collection-pilot discipline",
+          "standing_resolution_state": "unresolved",
+          "standing_resolution_basis": "Collection authority is future-dependent and not exercised by the source-selection sweep.",
+          "standing_resolution_blockers": [
+            "future pilot review has not occurred"
+          ],
+          "licensed_consequences": [],
+          "blocked_consequences": [
+            "authorize collection now",
+            "claim quantitative bounds",
+            "production graph change"
+          ]
+        }
+      ],
+      "recognition_relation": [
+        "select",
+        "reject",
+        "pair",
+        "defer"
+      ],
+      "response_eligibility": [
+        "candidate source",
+        "supporting source",
+        "reject as primary denominator",
+        "defer collection"
+      ],
+      "standing_resolution_state": "partially_resolved",
+      "standing_resolution_basis": "Some recognizers have established standing for narrow consequence, while future or external recognizers remain unresolved or contested for stronger consequence.",
+      "standing_open_questions": [
+        "Which future reviewer or protocol gate authorizes collection?",
+        "How should source-native authority be preserved without converting it into fit-for-protocol authority?"
+      ]
+    },
+    "policy_license": {
+      "attempted_consequence": "Use source-selection verdicts to guide later Workstream B pilot source choice.",
+      "action_policy": "Source-selection-only ceiling and protocol fit criteria.",
+      "licensed_consequence": "candidate/support/reject-as-primary routing",
+      "license_basis": "Protocol criteria, denominator exposure, non-claim flags, and source-detail notes.",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": [
+        "data collection",
+        "threshold claim",
+        "risk/security claim",
+        "source quality condemnation",
+        "production graph change"
+      ],
+      "consequence_routes": [
+        {
+          "consequence": "authorize collection now",
+          "route_status": "licensed",
+          "recognizer_chain": [
+            "CDP source-selection author",
+            "future Workstream B pilot reviewer"
+          ],
+          "route_basis": "Intentional bad fixture: treats source-selection plus future reviewer as if collection were already licensed."
+        },
+        {
+          "consequence": "authorize collection now",
+          "route_status": "blocked",
+          "recognizer_chain": [
+            "future Workstream B pilot reviewer"
+          ],
+          "route_basis": "Collection authority requires future pilot review.",
+          "blocked_by": [
+            "future Workstream B pilot reviewer"
+          ]
+        }
+      ]
+    },
+    "transmission": {
+      "transmission_path": "public source surfaces -> CDP source-selection sweep -> future Workstream B pilot",
+      "metadata_preserved": [
+        "fit verdict",
+        "denominator status",
+        "non-claim flags",
+        "source type"
+      ],
+      "metadata_lost": [
+        "some source commit/version details",
+        "future collection review"
+      ]
+    },
+    "chain": {
+      "upstream_links": [
+        "source edge",
+        "quantification scout",
+        "runtime protocols",
+        "public source surfaces"
+      ],
+      "downstream_links": [
+        "future source choice",
+        "future collection pilot"
+      ],
+      "chain_license_status": "some_links_unlicensed",
+      "unlicensed_links": [
+        "collection and quantitative claims remain unlicensed"
+      ]
+    },
+    "verdict": {
+      "verdict": "route_overreach_warning_fixture",
+      "claim_ceiling": "licensed source-routing route with collection and quantitative claims blocked",
+      "next_check": "Represent source-native authority and protocol-fit standing separately."
+    },
+    "validation": {
+      "record_validation_status": "warnings",
+      "validated_by": "scripts/validate_compiler_records.py --schema docs/schemas/fsst_compiler_record_v0.3.schema.json",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.3"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "future Workstream B pilot reviewer for collection; CDP author for source-selection only",
+      "operator_instruction_reference": "Milestone 1K partial standing and restricted license batch"
+    },
+    "reflexive_pressure": {
+      "self_application": false,
+      "composition_pressure": "strong",
+      "new_field_pressure": [
+        "standing_question_status",
+        "source_native_authority",
+        "protocol_fit_authority",
+        "per_recognizer_standing_resolution_state",
+        "consequence_routes",
+        "partial_standing_license"
+      ],
+      "notes": "This exposes that authoritative source status and fit-for-protocol standing are different."
+    }
+  }
+]

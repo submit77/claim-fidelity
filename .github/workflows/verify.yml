@@ -1,0 +1,30 @@
+name: Verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install validator dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Set up Lean and recheck the compiled environment
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal/lean
+          leanchecker: true
+      - name: Run the complete Claim Fidelity verification gate
+        run: python scripts/run_formal_verification_checks.py --skip-axle

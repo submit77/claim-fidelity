@@ -1,0 +1,168 @@
+{
+  "record_id": "FSST-FILLED-SCAFFOLD-001",
+  "record_version": "fsst_compiler_record_v0.1",
+  "source": {
+    "repo": "formal-symbolic-systems-theory",
+    "artifact": "Compiler Record Refusal Fixtures v0.1",
+    "path": "<workspace>/formal-symbolic-systems-theory/docs/formation/24_compiler_record_refusal_fixtures_v0.1.md",
+    "artifact_type": "normal_form",
+    "source_status": "draft"
+  },
+  "symbolic_system": {
+    "system_name": "FSST compiler record refusal fixtures",
+    "system_type": "validator-refusal fixture doctrine",
+    "boundary": "Documents the positive and negative compiler-record validation fixtures for FSST Milestone 1E."
+  },
+  "carrier": {
+    "carrier_kind": "formation document",
+    "carrier_state": "v0.1 refusal-fixture result with schema-invalid cases, guardrail cases, validation results, and claim ceiling",
+    "carrier_state_space": "fixture lists, validation results, schema-vs-guardrail distinctions, findings, claim ceilings, next-pressure statements",
+    "maintainer": "FSST formation docs and compiler-record validation workflow"
+  },
+  "use_episode": {
+    "use": "Use the refusal-fixture doctrine to decide whether later compiler-record tooling preserves hard schema refusal and guardrail refusal behavior.",
+    "actor_context": "FSST compiler tooling maintenance and milestone regression checks",
+    "inference_drawn": "The fixture set can serve as a local regression pressure surface for schema and validator changes.",
+    "inference_type": "tooling-regression guidance",
+    "non_inferences": [
+      "The refusal fixtures prove the source artifacts are true.",
+      "The fixture set is complete for all possible compiler-record failures.",
+      "Passing the fixture set licenses production compiler status."
+    ]
+  },
+  "binding": {
+    "binding_target": "the validator refusal behavior and fixture interpretation recorded by Milestone 1E",
+    "binding_basis": ["operational", "codebook/conformance", "frame-relative"],
+    "binding_mechanism": ["documented workflow", "JSON schema", "validator guardrails"],
+    "claimed_mode": "validator-refusal fixture documentation",
+    "operative_mode": "regression guidance for compiler-record schema and validator changes"
+  },
+  "validity": {
+    "validity_criterion": "The record preserves the documented 1E claim ceiling, fixture classes, validation results, and non-claims without upgrading them.",
+    "validity_status": "partially_valid",
+    "validity_evidence": "Milestone 1E writeup records schema-invalid failures=7 warnings=0, guardrail failures=0 warnings=5, strict warning failure, and positive 1D pass.",
+    "confidence": "high for local tooling-regression use; not applicable to domain truth",
+    "uncertainty": "The fixture set is hand-built and may not cover future schema or semantic failure families."
+  },
+  "scope": {
+    "scope_conditions": "FSST compiler-record schema, validator, scaffold, and fixture maintenance for Milestones 1E and 1G.",
+    "scope_status": "narrowed",
+    "scope_preserved": [
+      "schema-invalid fixture class",
+      "guardrail fixture class",
+      "positive control class",
+      "claim ceiling"
+    ],
+    "scope_lost": [
+      "coverage of all future compiler-record failure modes"
+    ],
+    "prohibited_scope_extensions": [
+      "production compiler claim",
+      "automated semantic extraction claim",
+      "domain truth certification",
+      "final schema claim"
+    ]
+  },
+  "recognition_authority": {
+    "recognizers": [
+      "FSST maintainer",
+      "compiler-record validator",
+      "future regression harness"
+    ],
+    "recognizer_standing": "The validator has standing over schema and guardrail outcomes; maintainers have standing to interpret milestone claim ceilings; future harnesses may only preserve those checks.",
+    "authority_source": "FSST formation docs, v0.2 schema, validator script, and recorded 1E validation results.",
+    "uptake_path": "1E formation writeup -> scaffold-filled record -> validator -> future regression harness",
+    "distributed_standing": [
+      {
+        "recognizer": "compiler-record validator",
+        "standing_scope": "detect schema failures and guardrail warnings for compiler-record JSON",
+        "standing_basis": "JSON Schema v0.2 plus validator guardrail code"
+      },
+      {
+        "recognizer": "FSST maintainer",
+        "standing_scope": "interpret fixture results and update formation doctrine",
+        "standing_basis": "local repo maintenance authority"
+      },
+      {
+        "recognizer": "future regression harness",
+        "standing_scope": "rerun positive and negative checks without expanding their claim ceiling",
+        "standing_basis": "1E and 1G milestone artifacts"
+      }
+    ],
+    "recognition_relation": ["validate", "interpret", "preserve", "revise"],
+    "response_eligibility": [
+      "accept clean positive record",
+      "refuse schema-invalid record",
+      "warn or fail on guardrail overreach",
+      "record fixture pressure"
+    ]
+  },
+  "policy_license": {
+    "attempted_consequence": "Use the 1E refusal-fixture writeup as a source artifact for a completed scaffold-derived compiler record.",
+    "action_policy": "Compiler-record v0.2 schema plus validator guardrails and 1E claim ceiling.",
+    "licensed_consequence": "Treat this filled record as a clean local example of scaffold -> fill -> validate.",
+    "license_basis": "No TODO markers, explicit scope, blocked consequences, distributed standing, and bounded claim ceiling.",
+    "consequence_status": "licensed_with_restriction",
+    "all_or_refuse_policy": false,
+    "blocked_consequences": [
+      "claiming production compiler capability",
+      "claiming automated semantic extraction",
+      "claiming domain truth certification",
+      "treating fixture coverage as complete"
+    ]
+  },
+  "transmission": {
+    "transmission_path": "1F scaffold shape -> hand-filled compiler record -> validator -> 1G regression harness",
+    "metadata_preserved": [
+      "source path",
+      "claim ceiling",
+      "scope boundary",
+      "blocked consequences",
+      "distributed standing",
+      "validation status"
+    ],
+    "metadata_lost": [
+      "none for local tooling-regression scope"
+    ]
+  },
+  "chain": {
+    "upstream_links": [
+      "24_compiler_record_refusal_fixtures_v0.1.md",
+      "fsst_compiler_record_v0.2.schema.json",
+      "validate_compiler_records.py",
+      "scaffold_compiler_record.py"
+    ],
+    "downstream_links": [
+      "1G regression harness",
+      "future scaffold-filled records"
+    ],
+    "chain_license_status": "all_links_licensed",
+    "unlicensed_links": [
+      "production compiler promotion is not licensed"
+    ]
+  },
+  "verdict": {
+    "verdict": "licensed_with_restriction",
+    "claim_ceiling": "completed scaffold-derived compiler-record example",
+    "next_check": "Add a regression harness that checks this positive record plus unresolved and overclaiming negatives."
+  },
+  "validation": {
+    "record_validation_status": "passed",
+    "validated_by": "scripts/validate_compiler_records.py",
+    "validated_at": "2026-05-07",
+    "schema_version": "fsst_compiler_record_v0.2"
+  },
+  "review": {
+    "cold_review_status": "not_required",
+    "promotion_authority": "FSST formation maintenance only; no production compiler promotion",
+    "operator_instruction_reference": "Milestone 1G filled scaffold workflow"
+  },
+  "reflexive_pressure": {
+    "self_application": true,
+    "composition_pressure": "moderate",
+    "new_field_pressure": [
+      "regression_harness_status"
+    ],
+    "notes": "This record demonstrates scaffold -> fill -> validate without upgrading the scaffold to semantic extraction."
+  }
+}

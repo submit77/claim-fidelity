@@ -1,0 +1,148 @@
+[
+  {
+    "record_id": "1O-REFUSAL-SCOPE-STRIPPED-001",
+    "record_version": "fsst_compiler_record_v0.1",
+    "source": {
+      "repo": "reality-alignment-engine",
+      "artifact": "Overreaching RAE to CDP collection route",
+      "path": "<workspace>/reality-alignment-engine/docs/examples/pilot_002_coupling_documentation_protocol_decision.md",
+      "artifact_type": "runtime_packet",
+      "source_status": "draft"
+    },
+    "symbolic_system": {
+      "system_name": "Overreaching cross-record collection route",
+      "system_type": "cross-record route refusal fixture",
+      "boundary": "Fixture intentionally routes a drafting consequence into collection while losing required metadata."
+    },
+    "carrier": {
+      "carrier_kind": "compiler record composition",
+      "carrier_state": "malformed licensed route with missing metadata",
+      "carrier_state_space": "record ids, consequences, downstream uses, metadata",
+      "maintainer": "FSST refusal fixtures"
+    },
+    "use_episode": {
+      "use": "Use upstream protocol-writing consequence to authorize data collection.",
+      "actor_context": "negative cross-record fixture",
+      "inference_drawn": "Collection is licensed.",
+      "inference_type": "overclaim",
+      "non_inferences": ["This fixture should not pass guardrails."]
+    },
+    "binding": {
+      "binding_target": "drafting consequence to collection authorization",
+      "binding_basis": ["operational"],
+      "binding_mechanism": ["compiler-record chain"],
+      "claimed_mode": "cross-record route composition",
+      "operative_mode": "metadata-stripping overreach"
+    },
+    "validity": {
+      "validity_criterion": "Required metadata must survive.",
+      "validity_status": "invalid",
+      "validity_evidence": "Scope and blocked-consequence metadata are lost.",
+      "confidence": "low",
+      "uncertainty": "none; this is a refusal fixture"
+    },
+    "scope": {
+      "scope_conditions": "Protocol-writing only.",
+      "scope_status": "stripped",
+      "scope_preserved": ["confidence"],
+      "scope_lost": ["scope", "blocked consequences"],
+      "prohibited_scope_extensions": ["data collection", "production promotion"]
+    },
+    "recognition_authority": {
+      "recognizers": ["RAE packet author", "future cold reviewer"],
+      "recognizer_standing": "Future cold reviewer standing is unresolved and cannot authorize collection here.",
+      "authority_source": "negative fixture",
+      "uptake_path": "RAE packet -> invalid collection route",
+      "standing_resolution_state": "partially_resolved",
+      "standing_resolution_basis": "RAE standing established for drafting only; reviewer standing unresolved.",
+      "standing_open_questions": ["No review occurred."],
+      "distributed_standing": [
+        {
+          "recognizer": "RAE packet author",
+          "standing_scope": "drafting only",
+          "standing_basis": "RAE packet",
+          "standing_resolution_state": "established",
+          "standing_resolution_basis": "Established for drafting.",
+          "standing_resolution_blockers": [],
+          "licensed_consequences": ["draft CDP coupling-documentation collection protocol"],
+          "blocked_consequences": ["authorize data collection"]
+        },
+        {
+          "recognizer": "future cold reviewer",
+          "standing_scope": "future collection review",
+          "standing_basis": "future review",
+          "standing_resolution_state": "unresolved",
+          "standing_resolution_basis": "Review has not occurred.",
+          "standing_resolution_blockers": ["review absent"],
+          "licensed_consequences": [],
+          "blocked_consequences": ["authorize data collection"]
+        }
+      ],
+      "recognition_relation": ["overroute", "block"],
+      "response_eligibility": ["warn", "refuse"]
+    },
+    "policy_license": {
+      "attempted_consequence": "Authorize data collection.",
+      "action_policy": "Should refuse collection without preserved metadata and reviewer standing.",
+      "licensed_consequence": "authorize data collection",
+      "license_basis": "invalid fixture",
+      "consequence_status": "licensed_with_restriction",
+      "all_or_refuse_policy": false,
+      "blocked_consequences": ["production promotion"],
+      "consequence_routes": [
+        {
+          "consequence": "authorize data collection",
+          "route_status": "licensed_with_restriction",
+          "recognizer_chain": ["future cold reviewer"],
+          "route_basis": "Invalid: reviewer standing unresolved."
+        }
+      ]
+    },
+    "transmission": {
+      "transmission_path": "RAE packet -> invalid collection route",
+      "metadata_preserved": ["confidence"],
+      "metadata_lost": ["scope", "blocked consequences"]
+    },
+    "chain": {
+      "upstream_links": ["RAE-PILOT002-PARTIAL-LICENSE-001"],
+      "downstream_links": ["invalid collection route"],
+      "chain_license_status": "all_links_licensed",
+      "unlicensed_links": [],
+      "cross_record_routes": [
+        {
+          "upstream_record_id": "RAE-PILOT002-PARTIAL-LICENSE-001",
+          "upstream_consequence": "draft CDP coupling-documentation collection protocol",
+          "downstream_record_id": "invalid-collection-route",
+          "downstream_use": "authorize collection",
+          "route_status": "licensed",
+          "metadata_required": ["scope", "confidence", "standing", "blocked consequences"],
+          "metadata_preserved": ["confidence"],
+          "metadata_lost": ["scope", "blocked consequences"],
+          "composition_basis": "Invalid: route tries to license downstream collection after stripping restrictions."
+        }
+      ]
+    },
+    "verdict": {
+      "verdict": "should_warn",
+      "claim_ceiling": "refusal fixture",
+      "next_check": "Validator should warn on lost required metadata."
+    },
+    "validation": {
+      "record_validation_status": "warnings",
+      "validated_by": "scripts/validate_compiler_records.py --schema docs/schemas/fsst_compiler_record_v0.4.schema.json",
+      "validated_at": "2026-05-07",
+      "schema_version": "fsst_compiler_record_v0.4"
+    },
+    "review": {
+      "cold_review_status": "pending",
+      "promotion_authority": "none",
+      "operator_instruction_reference": "Milestone 1O refusal fixture"
+    },
+    "reflexive_pressure": {
+      "self_application": true,
+      "composition_pressure": "strong",
+      "new_field_pressure": ["cross_record_routes"],
+      "notes": "This fixture should warn because required metadata is lost."
+    }
+  }
+]
