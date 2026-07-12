@@ -9,6 +9,7 @@ Claim Fidelity is an experimental formal-methods artifact about how symbolic obj
 - a buildable Lean 4 library for scope, binding, recognition authority, consequence licensing, route composition, metadata preservation, and drift;
 - JSON schemas and a validator for records that carry source status, scope, standing, licensed consequences, blocked consequences, and claim ceilings;
 - positive, warning, and refusal fixtures that test whether the validator accepts bounded routes and rejects or flags overreach;
+- a fully inspectable verifier-optimization protocol unit with checked positive/negative witnesses, executable scoring, same-prefix selection contrasts, and a selection-blind auditor interface;
 - generated standalone Lean bundles with drift checks against their canonical imported modules.
 
 The project is research infrastructure, not a completed theory of symbolic systems and not empirical validation that its formal vocabulary maps onto natural or deployed systems. The Lean namespace, schemas, and historical records retain the internal `FSST` name so that the checked artifact remains traceable to its source lineage.
@@ -37,20 +38,22 @@ This local gate runs:
 1. `lake build` for the default `Core` and `Theorems` targets;
 2. positive and expected-negative compiler-record regression cases;
 3. the compact claim-gap demonstration against a real refusal fixture;
-4. repository integrity and import-coverage checks;
-5. generated-bundle drift checks;
-6. direct Lean checks of both generated standalone bundles.
+4. the verifier-optimization protocol demonstration, including its Lean witnesses and auditor-interface checks;
+5. repository integrity and import-coverage checks;
+6. generated-bundle drift checks;
+7. direct Lean checks of both generated standalone bundles.
 
-On 2026-07-11, the local gate completed with:
+On 2026-07-12, the local gate completed with:
 
 ```text
 PASS lake build (32 jobs)
 PASS compiler record checks (9 cases, 0 harness failures)
 PASS claim-gap demo (schema-valid artifact refused at the claim layer)
+PASS verifier-optimization protocol demo (4 witnessed atoms, 4 exhaustive certificates)
 PASS repo integrity audit (6 checks, 0 failures)
 PASS two bundle drift checks
 PASS two direct generated-bundle Lean checks
-Summary: 8 top-level checks, 0 failures
+Summary: 9 top-level checks, 0 failures
 ```
 
 Warnings from the Lean unused-variable linter remain. Expected-negative JSON fixtures intentionally emit schema failures or guardrail warnings; the harness passes when those fixtures are refused as specified.
@@ -84,6 +87,18 @@ DEMO RESULT     PASS — validity/claim gap detected
 
 The demo is intentionally small, uses the same validator and versioned schema as the regression harness, and exits nonzero if the expected gap is not detected. See [`examples/CLAIM_GAP_DEMO.md`](examples/CLAIM_GAP_DEMO.md) for the claim–mechanism–control reading.
 
+## Verifier-optimization protocol demonstration
+
+The [worked protocol unit](examples/protocol_unit/README.md) makes the proposed next experiment mechanically inspectable before any model-behavior claim is attempted:
+
+```text
+python examples/protocol_unit/run_demo.py
+```
+
+It compiles one frozen Lean artifact and four positive/negative witness bindings, derives labels with a typed structural linter, validates four exhaustive claim certificates, performs nested same-prefix selection, reports proxy lift and fixture target-score contrasts, and checks a selection-blind auditor interface.
+
+The artifact, audit, and candidate pool are hand-authored didactic fixtures. This is **not a pilot, benchmark, or empirical result**. It estimates no model behavior, prevalence, auditor effectiveness, or cross-domain transfer.
+
 ## Lean surface
 
 The canonical Lean project is under `formal/lean/`:
@@ -96,7 +111,7 @@ formal/lean/Theorems/
 formal/lean/Bundles/
 ```
 
-The tracked canonical surface contains 32 Lean files and 148 theorem declaration lines, with no `sorry` tokens or explicit `axiom` declarations in the audited files. Counts describe source shape, not mathematical novelty or empirical confirmation.
+The tracked canonical library surface contains 32 Lean files and 148 theorem declaration lines, with no `sorry` tokens or explicit `axiom` declarations in the audited files. The separate protocol-unit Lean fixture is directly compiled by its demo runner and is not included in those library counts. Counts describe source shape, not mathematical novelty or empirical confirmation.
 
 Representative modules:
 

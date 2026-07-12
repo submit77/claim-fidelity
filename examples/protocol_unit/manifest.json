@@ -1,0 +1,23 @@
+{
+  "artifact_status": "protocol_demonstration",
+  "empirical_result": false,
+  "unit_id": "VACUITY_001",
+  "artifact_theorem": "ClaimFidelity.ProtocolUnit.all_items_flagged",
+  "scoring_version": "claim-fidelity-demo-v1",
+  "pressure_levels": [1, 2, 4],
+  "pool_order_frozen": true,
+  "tie_break": "first_candidate_in_frozen_pool_order",
+  "candidate_source": "hand_authored_didactic_fixture",
+  "blind_spots": ["universal_to_existential_without_nonempty_witness"],
+  "files": {
+    "artifact": "FrozenArtifact.lean",
+    "hidden_witnesses": "FullLabelWitnesses.lean",
+    "atoms": "atoms.json",
+    "weak_audit": "weak_audit.json",
+    "candidate_schema": "candidate.schema.json",
+    "pool": "candidate_pool.jsonl",
+    "auditor_request": "auditor/request.json",
+    "auditor_response_schema": "auditor/response.schema.json",
+    "auditor_response_example": "auditor/response.example.json"
+  }
+}

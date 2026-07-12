@@ -40,3 +40,7 @@ python scripts/run_formal_verification_checks.py --skip-axle
   recheck. The repository-integrity audit separately refuses `sorry` tokens and explicit axioms.
 - [ ] Lean unused-variable linter cleanup where it does not alter theorem statements.
 - [ ] Contribution policy if external contributions will be accepted.
+
+## Post-release protocol addition (2026-07-12)
+
+The working tree adds `examples/protocol_unit/`, an explicitly non-empirical verifier-optimization protocol demonstration, and includes it in the local gate. The updated gate passes nine top-level checks with zero failures. This section records a post-v0.1.0 change; a new immutable release and cold-clone record should be created only after the addition is independently audited and published.

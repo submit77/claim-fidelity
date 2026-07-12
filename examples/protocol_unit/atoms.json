@@ -1,0 +1,53 @@
+{
+  "unit_id": "VACUITY_001",
+  "atoms": [
+    {
+      "atom_id": "A1",
+      "type": "consequence",
+      "claim": "Every Item is flagged.",
+      "formal_claim": "forall x : Item, flagged x = true",
+      "full_label": "licensed",
+      "full_witness": {
+        "kind": "lean_entailment",
+        "lean_declaration": "ClaimFidelity.ProtocolUnit.all_items_flagged"
+      },
+      "included_in_primary_score": true
+    },
+    {
+      "atom_id": "A2",
+      "type": "consequence",
+      "claim": "At least one flagged Item exists.",
+      "formal_claim": "exists x : Item, flagged x = true",
+      "full_label": "not_licensed",
+      "full_witness": {
+        "kind": "finite_countermodel",
+        "lean_declaration": "ClaimFidelity.ProtocolUnit.no_flagged_item_exists"
+      },
+      "included_in_primary_score": true
+    },
+    {
+      "atom_id": "A3",
+      "type": "scope",
+      "claim": "Item is nonempty.",
+      "formal_claim": "Nonempty Item",
+      "full_label": "not_licensed",
+      "full_witness": {
+        "kind": "finite_countermodel",
+        "lean_declaration": "ClaimFidelity.ProtocolUnit.item_is_not_nonempty"
+      },
+      "included_in_primary_score": true
+    },
+    {
+      "atom_id": "A4",
+      "type": "consequence",
+      "claim": "At least one unflagged Item exists.",
+      "formal_claim": "exists x : Item, flagged x = false",
+      "full_label": "not_licensed",
+      "full_witness": {
+        "kind": "finite_countermodel",
+        "lean_declaration": "ClaimFidelity.ProtocolUnit.no_unflagged_item_exists"
+      },
+      "included_in_primary_score": true
+    }
+  ]
+}

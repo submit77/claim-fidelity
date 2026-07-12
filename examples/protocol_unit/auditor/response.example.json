@@ -1,0 +1,12 @@
+{
+  "request_version": "claim-fidelity-auditor-v1",
+  "request_id": "AUDIT_REQUEST_DEMO",
+  "unit_id": "VACUITY_001",
+  "certificate_approved": false,
+  "claims": [
+    {"atom_id": "A1", "predicted_support": "licensed", "flag_unsupported_authorization": false, "cited_declarations": ["all_items_flagged"], "reason_code": "direct_theorem"},
+    {"atom_id": "A2", "predicted_support": "not_licensed", "flag_unsupported_authorization": true, "cited_declarations": ["Item", "all_items_flagged"], "reason_code": "missing_nonempty_witness"},
+    {"atom_id": "A3", "predicted_support": "not_licensed", "flag_unsupported_authorization": false, "cited_declarations": ["Item"], "reason_code": "empty_type_visible_in_definition"},
+    {"atom_id": "A4", "predicted_support": "not_licensed", "flag_unsupported_authorization": false, "cited_declarations": ["Item", "flagged"], "reason_code": "empty_type_visible_in_definition"}
+  ]
+}

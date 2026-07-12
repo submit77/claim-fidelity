@@ -1,6 +1,6 @@
 # Current status
 
-**Verified:** 2026-07-11  
+**Verified:** 2026-07-12
 **Status:** experimental research infrastructure  
 **Production claim:** false
 
@@ -19,11 +19,12 @@ The repository now has a buildable Lean 4 project under `formal/lean/` with defa
 python scripts/run_formal_verification_checks.py --skip-axle
 ```
 
-The current gate passes all eight top-level local checks:
+The current gate passes all nine top-level local checks:
 
 - Lean build: 32 jobs completed;
 - compiler-record harness: 9 expected outcomes, 0 harness failures;
 - claim-gap demo: schema-valid artifact refused at the claim layer;
+- verifier-optimization protocol demo: frozen Lean artifact and four full-label witnesses compiled; weak labels derived from declared rules; four certificates and the selection-blind auditor interface validated;
 - repository-integrity audit: 6 checks, 0 failures;
 - two generated-bundle drift checks;
 - two direct Lean checks of generated bundles.
@@ -51,6 +52,8 @@ The strongest engineering surface is not a general theory claim. It is the combi
 4. a regression harness that expects those attempts to be refused or warned.
 
 This makes the repository useful as a seed for empirical work on whether formal or schema-valid artifacts remain faithful to the claims and consequences assigned to them.
+
+The worked protocol unit under `examples/protocol_unit/` additionally demonstrates formal witness binding, typed structural-linter behavior, certificate scoring, selection arithmetic, and auditor-interface isolation. Its fixtures are hand-authored. It is a protocol-mechanics demonstration, not a model-behavior pilot or empirical result.
 
 ## Claim ceiling
 

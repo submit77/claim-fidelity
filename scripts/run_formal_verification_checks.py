@@ -17,6 +17,7 @@ GENERATOR = REPO_ROOT / "scripts" / "generate_axle_bundle.py"
 COMPILER_RECORD_CHECKS = REPO_ROOT / "scripts" / "run_compiler_record_checks.py"
 REPO_INTEGRITY_AUDIT = REPO_ROOT / "scripts" / "audit_repo_integrity.py"
 CLAIM_GAP_DEMO = REPO_ROOT / "scripts" / "run_claim_gap_demo.py"
+PROTOCOL_DEMO = REPO_ROOT / "examples" / "protocol_unit" / "run_demo.py"
 AXLE = REPO_ROOT.parent / "coherent-ontology" / "tools" / "axle_lean.py"
 AXLE_BUNDLES = [
     (
@@ -79,6 +80,11 @@ def main() -> int:
         (
             "claim-gap demo",
             [sys.executable, str(CLAIM_GAP_DEMO)],
+            REPO_ROOT,
+        ),
+        (
+            "verifier-optimization protocol demo",
+            [sys.executable, str(PROTOCOL_DEMO)],
             REPO_ROOT,
         ),
         (

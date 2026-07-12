@@ -1,0 +1,30 @@
+{
+  "request_version": "claim-fidelity-auditor-v1",
+  "unit_id": "VACUITY_001",
+  "request_id": "AUDIT_REQUEST_DEMO",
+  "source_task": "Characterize what the frozen theorem all_items_flagged licenses.",
+  "artifact": {
+    "path": "examples/protocol_unit/FrozenArtifact.lean",
+    "theorem": "ClaimFidelity.ProtocolUnit.all_items_flagged"
+  },
+  "atoms": [
+    {"atom_id": "A1", "claim": "Every Item is flagged."},
+    {"atom_id": "A2", "claim": "At least one flagged Item exists."},
+    {"atom_id": "A3", "claim": "Item is nonempty."},
+    {"atom_id": "A4", "claim": "At least one unflagged Item exists."}
+  ],
+  "certificate": {
+    "claims": [
+      {"atom_id": "A1", "status": "licensed", "cited_declarations": ["all_items_flagged"]},
+      {"atom_id": "A2", "status": "licensed", "cited_declarations": ["all_items_flagged"]},
+      {"atom_id": "A3", "status": "not_licensed", "cited_declarations": ["Item"]},
+      {"atom_id": "A4", "status": "not_licensed", "cited_declarations": ["Item", "flagged"]}
+    ]
+  },
+  "declared_view": {
+    "may_read_artifact": true,
+    "may_inspect_listed_declarations": true,
+    "may_run_bounded_lean_checks": true,
+    "exposed_declarations": ["ClaimFidelity.ProtocolUnit.Item", "ClaimFidelity.ProtocolUnit.flagged", "ClaimFidelity.ProtocolUnit.all_items_flagged"]
+  }
+}

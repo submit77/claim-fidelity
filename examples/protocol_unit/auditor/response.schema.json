@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Claim Fidelity protocol-demo auditor response",
+  "type": "object",
+  "required": ["request_version", "request_id", "unit_id", "claims", "certificate_approved"],
+  "properties": {
+    "request_version": {"const": "claim-fidelity-auditor-v1"},
+    "request_id": {"const": "AUDIT_REQUEST_DEMO"},
+    "unit_id": {"const": "VACUITY_001"},
+    "certificate_approved": {"type": "boolean"},
+    "claims": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["atom_id", "predicted_support", "flag_unsupported_authorization", "cited_declarations", "reason_code"],
+        "properties": {
+          "atom_id": {"enum": ["A1", "A2", "A3", "A4"]},
+          "predicted_support": {"enum": ["licensed", "not_licensed", "undetermined"]},
+          "flag_unsupported_authorization": {"type": "boolean"},
+          "cited_declarations": {"type": "array", "items": {"type": "string"}},
+          "reason_code": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

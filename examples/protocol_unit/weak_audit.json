@@ -1,0 +1,26 @@
+{
+  "audit_id": "W_DEMO_1",
+  "purpose": "Didactic low-cost claim audit with one declared vacuity blind spot.",
+  "resource_envelope": {
+    "passes_over_direct_conclusion": 1,
+    "normalization_depth": 1,
+    "proof_search": false,
+    "finite_cardinality_inspection": false,
+    "nonempty_witness_search": false,
+    "transitive_dependency_closure": false
+  },
+  "implementation_version": "typed_structural_linter_v1",
+  "rules": {
+    "exact_direct_match": {"enabled": true, "label": "licensed"},
+    "universal_to_existential_head_match": {
+      "enabled": true,
+      "requires_nonempty_witness": false,
+      "label": "licensed"
+    },
+    "default": {"label": "not_licensed"}
+  },
+  "declared_blind_spot": {
+    "name": "universal_to_existential_without_nonempty_witness",
+    "description": "The audit treats a universal predicate claim as licensing an existential claim without checking that the quantified type is inhabited."
+  }
+}

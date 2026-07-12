@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Claim Fidelity protocol-demo candidate certificate",
+  "type": "object",
+  "required": ["candidate_id", "source", "claims", "does_not_establish"],
+  "properties": {
+    "candidate_id": {"type": "string", "pattern": "^C[1-4]$"},
+    "source": {"const": "hand_authored_didactic_fixture"},
+    "claims": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["atom_id", "status", "cited_declarations"],
+        "properties": {
+          "atom_id": {"enum": ["A1", "A2", "A3", "A4"]},
+          "status": {"enum": ["licensed", "not_licensed", "undetermined"]},
+          "cited_declarations": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "does_not_establish": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
