@@ -41,6 +41,10 @@ python scripts/run_formal_verification_checks.py --skip-axle
 - [ ] Lean unused-variable linter cleanup where it does not alter theorem statements.
 - [ ] Contribution policy if external contributions will be accepted.
 
-## Post-release protocol addition (2026-07-12)
+## v0.2.0 protocol addition (2026-07-12)
 
-The working tree adds `examples/protocol_unit/`, an explicitly non-empirical verifier-optimization protocol demonstration, and includes it in the local gate. The updated gate passes nine top-level checks with zero failures. This section records a post-v0.1.0 change; a new immutable release and cold-clone record should be created only after the addition is independently audited and published.
+Commit `4f15bbb` adds `examples/protocol_unit/`, an explicitly non-empirical verifier-optimization protocol-mechanics demonstration, and includes it in the local gate. Independent cold audits found and drove fixes to the visible/hidden witness split, claim-representation binding, weak-linter configuration, candidate schemas and citations, auditor reachability, and selection arithmetic before publication.
+
+A clean `--no-local` clone of `4f15bbb` was created under a new temporary path and the full local gate was run from the clone. Result: **9 top-level checks, 0 failures**, including compilation of the protocol's auditor-visible artifact and hidden witnesses, generated Lean type-binding checks for all four JSON labels, structural-linter execution, certificate and auditor-interface validation, and the existing eight release checks.
+
+The candidate is ready for a `v0.2.0` immutable release after hosted CI passes.
